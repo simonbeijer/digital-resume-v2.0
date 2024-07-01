@@ -6,13 +6,13 @@
       <a class="linkedin" href=""></a>
     </div>
     <div class="hero-text">
-      <div class="line"></div>
       <h1>SIMON BEIJER</h1>
+      <div class="line"></div>
       <div class="label">
         <p>Web Developer</p>
       </div>
     </div>
-    <div class="button-div">
+    <div class="button-div sidebar-color">
       <div class="arrow bounce" alt="scroll-down"></div>
     </div>
   </div>
@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.bunny.net/css?family=abeezee:400|archivo-black:400');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 .contact {
   height: 100px;
@@ -68,8 +68,8 @@ export default {
 }
 
 .bounce {
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2.5s infinite;
+  animation: bounce 2.5s infinite;
 }
 
 @-webkit-keyframes bounce {
@@ -83,18 +83,18 @@ export default {
   }
 
   40% {
-    -webkit-transform: translateY(-20px);
+    -webkit-transform: translateY(-15px);
   }
 
   60% {
-    -webkit-transform: translateY(-10px);
+    -webkit-transform: translateY(-5px);
   }
 }
 
 @-moz-keyframes bounce {
 
   0%,
-  20%,
+  15%,
   50%,
   80%,
   100% {
@@ -102,11 +102,11 @@ export default {
   }
 
   40% {
-    -moz-transform: translateY(-20px);
+    -moz-transform: translateY(-15px);
   }
 
   60% {
-    -moz-transform: translateY(-10px);
+    -moz-transform: translateY(-5px);
   }
 }
 
@@ -125,7 +125,7 @@ export default {
   }
 
   60% {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
 }
 
@@ -133,61 +133,40 @@ export default {
 .button-div {
   position: absolute;
   left: 78vw;
-  bottom: 95px;
+  bottom: 0px;
   width: 150px;
-  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   padding: 10px 0px;
   height: 60px;
 }
 
 
-.button-div::after {
-  content: "";
-  position: absolute;
-  bottom: -9px;
-  left: 0;
-  right: 0px;
-  height: 15px;
-  background-color: black;
-  -webkit-transform: skewY(-3deg);
-  transform: skewY(-3deg);
-  -webkit-transform-origin: top left;
-  transform-origin: top left;
-  z-index: 0;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-}
-
 .label {
   background: black;
   color: white;
   font-family: courier;
-  padding: 0px 15px !important;
+  padding: 0px 24px !important;
   display: inline-block;
-  margin-left: 32px;
+  text-align: center;
   text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.3);
   border-top-right-radius: 2px;
-}
-
-body {
-  padding: 1vw;
-  background: #fefefe;
-  text-align: center;
-}
-
-main {
-  font-size: 1em;
+  letter-spacing: 0.6ch;
+  width: auto;
+  margin-left: 20px !important;
+  margin-top: 1rem !important;
 }
 
 h1 {
-  font-size: 60px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: "Archivo Black", sans-serif;
+  font-size: 80px !important;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.2ch;
+  margin-bottom: 1rem !important;
 }
 
 h2 {
@@ -208,7 +187,7 @@ h2 {
 }
 
 .hero-image {
-  height: 110vh !important;
+  height: 100vh !important;
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../assets/img.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -220,8 +199,7 @@ h2 {
   text-align: center;
   position: absolute;
   bottom: 16%;
-  left: 22%;
-  transform: translate(-50%, -50%);
+  left: 10%;
   color: white;
   text-align: left;
 }

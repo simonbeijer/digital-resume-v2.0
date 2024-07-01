@@ -1,5 +1,5 @@
 <template>
-  <div v-if="firstSectionHeight" class="sidebar" :style="{ marginTop: sidebarTop }" ref="sidebar">
+  <div v-if="firstSectionHeight" class="sidebar sidebar-color" :style="{ marginTop: sidebarTop }" ref="sidebar">
     <ul>
       <li v-for="section in sidebarSections" :key="section">
         <a href="#" @click="selectSection(section)">{{ section }}</a>
@@ -28,14 +28,13 @@ export default {
   computed: {
     sidebarTop() {
       const halfwayPoint = this.firstSectionHeight / 1.4;
-      let firstSection = this.firstSectionHeight-88
-      let topPosition = firstSection;
+      let topPosition = this.firstSectionHeight;
 
       if(this.scrollTop > 0) {
         topPosition -= this.scrollTop;
       }
       if(this.scrollTop > halfwayPoint) {
-        topPosition = firstSection - halfwayPoint
+        topPosition = this.firstSectionHeight - halfwayPoint
       }
       // if (this.scrollTop > halfwayPoint) {
       //   topPosition = halfwayPoint;
@@ -44,7 +43,7 @@ export default {
       // }
       console.clear();
       console.log("halfwayPoint", halfwayPoint)
-      console.log("first section", firstSection)
+      console.log("first section", this.firstSectionHeight)
       console.log("main scroll", this.scrollTop)
       console.log("topPosition sidebar", topPosition)
       return `${topPosition}px`;
@@ -67,19 +66,17 @@ export default {
 
 <style scoped>
 .sidebar {
-  background-color: black;
   display: flex;
   position: fixed;
   left: 78vw;
   padding: 20px;
   z-index: 1000;
   transition: top 0.3s ease;
-  border-top-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   
 }
-.sidebar::before {
+/* .sidebar::before {
   content: "";
   position: absolute;
   top: 0;
@@ -92,7 +89,7 @@ export default {
   z-index: 0; 
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-}
+} */
 
 
 ul {

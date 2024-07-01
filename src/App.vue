@@ -90,6 +90,34 @@ body {
 
 .main-content {
   width: 100%;
-  /* Add any additional styling as needed */
+}
+
+.sketchy {
+  padding: 1rem 2rem;
+  display: inline-block;
+  border: 3px solid #4f4f4f;
+  font-size: 1rem;
+  border-radius: 8px; 
+  letter-spacing: 0.2ch;
+  background: #ffffff;
+  position: relative;
+  margin-bottom: 2rem; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.sketchy::before {
+  content: '';
+  border: 2px solid #353535;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+  border-radius: 8px;
+}
+.sidebar-color {
+  background: rgb(44, 44, 44);
 }
 </style>

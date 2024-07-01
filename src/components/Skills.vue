@@ -1,17 +1,18 @@
-<!-- Skills.vue -->
 <template>
-  <div id="skills" style="width: 100%; background-color: grey;">
-    <div :class="width < 600 ? 'col-3-div' : 'col-3-div max-width'" style="padding: 4rem 20%;">
-      <h2 style="text-align: center;">Skills</h2>
-      <div v-for="(content, index) in skillArr" :key="index" class="abilityDiv">
-        <div v-if="!content.title" :style="{ width: content.size, backgroundColor: 'whitesmoke', display: 'flex', alignItems: 'center' }" class="skill-all">
+  <div id="skills" class="skills-container">
+    <h2 class="skills-heading">SKILLS</h2>
+    <div :class="{'col-3-div': width < 600, 'max-width': width >= 600}" class="skills-wrapper sketchy">
+      <div v-for="(content, index) in skillArr" :key="index" class="skill-item">
+        <div v-if="content.title" class="title-item">
           <p>{{ content.name }}</p>
         </div>
-        <div v-else class="display-flex stripes" style="flex: 1; background-color: whitesmoke;">
-          <p style="font-size: 1.2rem; margin: 0.6rem 0; font-weight: 600; color: #babbba;">{{ content.name }}</p>
-        </div>
-        <div v-if="!content.title" :style="{ paddingRight: '1rem', backgroundColor: content.size === '100%' ? 'whitesmoke' : 'none', flex: content.size === '100%' ? 1 : 'auto' }">
-          <p style="padding: 0.1rem 0;">{{ content.size }}</p>
+        <div v-else class="ability-item">
+          <div class="ability-name">
+            <p>{{ content.name }}</p>
+          </div>
+          <div class="ability-bar" :style="{ width: content.size }">
+            <span class="ability-label">{{ content.size }}</span>
+          </div>
         </div>
       </div>
     </div>
@@ -24,7 +25,7 @@ export default {
   data() {
     return {
       skillArr: [
-        { name: "SKILLS", size: "100%", title: true },
+        { name: "WEB TECHNOLOGIES", size: "100%", title: true },
         { name: "HTML5", size: "95%" },
         { name: "CSS3", size: "80%" },
         { name: "Vue", size: "80%" },
@@ -42,6 +43,7 @@ export default {
         { name: "Windows", size: "90%" },
         { name: "Github", size: "80%" },
         { name: "VScode", size: "80%" },
+        { name: "Docker", size: "65%" },
         { name: "LANGUAGES & METHODS", size: "100%", title: true },
         { name: "Swedish", size: "100%" },
         { name: "English", size: "90%" },
@@ -65,31 +67,59 @@ export default {
 </script>
 
 <style scoped>
-.col-3-div {
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(208, 208, 208);
+  padding: 4rem 0;
+}
+
+.skills-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.skills-wrapper {
+  width: 900px;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item {
+  margin-bottom: 1rem;
+}
+
+.title-item {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.ability-item {
+  margin-bottom: 1rem;
+}
+
+.ability-name {
+  margin-bottom: 0.5rem;
+}
+
+.ability-bar {
   background-color: #a7c4b5;
+  height: 12px;
+  border-radius: 6px;
+  position: relative;
 }
-.display-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.stripes {
-  background: repeating-linear-gradient(
-    -55deg,
-    rgba(34, 34, 34, 0.8),
-    rgba(34, 34, 34, 0.8) 10px,
-    rgba(51, 51, 51, 0.8) 10px,
-    rgba(51, 51, 51, 0.8) 20px
-  );
-}
-.skill-all {
-  display: flex;
-  align-items: center;
-}
-.abilityDiv {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1rem 0;
+
+.ability-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 </style>
