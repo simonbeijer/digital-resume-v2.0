@@ -86,7 +86,6 @@ export default {
 .experience-container {
   display: flex;
   justify-content: center;
-  background-color: rgb(208, 208, 208);
   padding: 4rem 0;
   flex-direction: column;
   align-items: center;

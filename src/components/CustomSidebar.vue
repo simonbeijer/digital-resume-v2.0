@@ -1,8 +1,8 @@
 <template>
   <div v-if="firstSectionHeight" class="sidebar sidebar-color" :style="{ marginTop: sidebarTop }" ref="sidebar">
     <ul>
-      <li v-for="section in sidebarSections" :key="section">
-        <a href="#" @click="selectSection(section)">{{ section }}</a>
+      <li v-for="section in sidebarSections" :key="section" @click="selectSection(section)" class="hover">
+        <a href="#">{{ section }}</a>
       </li>
     </ul>
   </div>
@@ -56,7 +56,7 @@ export default {
   },
   methods: {
     selectSection(section) {
-      // Handle section selection
+      this.$emit('sectionMounted', section);
       console.log(section);
     }
   }
@@ -72,9 +72,23 @@ export default {
   padding: 20px;
   z-index: 1000;
   transition: top 0.3s ease;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
   
+}
+li {
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+li:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+li a {
+  text-decoration: none;
+  display: block;
 }
 /* .sidebar::before {
   content: "";
@@ -121,7 +135,7 @@ ul li:last-child {
 
 a {
   text-decoration: none;
-  color: rgb(212, 212, 212);
+  /* color: rgb(212, 212, 212); */
 }
 
 a:hover {

@@ -1,14 +1,14 @@
 <template>
   <div id="app" ref="appContainer">
-    <CustomSidebar :sidebarSections="sidebarSections" :scrollTop="scrollTop" :firstSectionHeight="firstSectionHeight" />
+    <CustomSidebar :sidebarSections="sidebarSections" :scrollTop="scrollTop" :firstSectionHeight="firstSectionHeight"  @sectionMounted="scrollToSection"/>
     <div class="main-content">
       <HeroImage ref="heroImage" />
-      <Profile />
-      <Experience />
-      <Skills />
-      <Education />
-      <Projects />
-      <Contact />
+      <Profile  id="Profile" />
+      <Skills  id="Skills" />
+      <Experience id="Experience" />
+      <Education id="Education" />
+      <Projects id="Projects" />
+      <Contact  id="Contact" />
     </div>
   </div>
 </template>
@@ -63,11 +63,88 @@ export default {
     handleResize() {
       this.updateFirstSectionHeight();
     },
+    scrollToSection(sectionId) {
+
+      console.log(sectionId)
+      if(sectionId == 'About') {
+        sectionId = 'Profile'
+      }
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   },
 };
 </script>
 
+
 <style>
+.sketchy {
+  padding: 1rem 2rem;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 8px; 
+  letter-spacing: 0.2ch;
+  background: #ffffff;
+  position: relative;
+  margin-bottom: 2rem; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.sketchy::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+  border-radius: 8px;
+}
+
+/* THEME COLORS */
+
+.sketchy {
+  border: 3px solid #4f4f4f;
+}
+.sketchy::before {
+  border: 2px solid #353535;
+}
+/* SIDEBAR COLORS */
+.sidebar-color {
+  background: rgb(209, 153, 107);
+}
+.sidebar li {
+  background: rgb(248, 248, 248);
+}
+.sidebar li a {
+  color: rgb(39, 40, 39);
+  font-weight: 600;
+}
+
+#profile {
+  background-color:whitesmoke !important;
+}
+#experience{
+  background-color: whitesmoke !important;
+}
+#skills {
+  background-color: whitesmoke !important;
+}
+#education {
+  background-color: whitesmoke !important;
+}
+#projects {
+  background-color: whitesmoke !important;
+}
+#contact {
+  background-color: lightgray !important;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 html, body {
@@ -91,33 +168,5 @@ html, body {
 
 }
 
-.sketchy {
-  padding: 1rem 2rem;
-  display: inline-block;
-  border: 3px solid #4f4f4f;
-  font-size: 1rem;
-  border-radius: 8px; 
-  letter-spacing: 0.2ch;
-  background: #ffffff;
-  position: relative;
-  margin-bottom: 2rem; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
 
-.sketchy::before {
-  content: '';
-  border: 2px solid #353535;
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
-  border-radius: 8px;
-}
-
-.sidebar-color {
-  background: rgb(44, 44, 44);
-}
 </style>

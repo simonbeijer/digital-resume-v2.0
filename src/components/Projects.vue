@@ -29,8 +29,8 @@ export default {
     return {
       width: window.innerWidth,
       projects: [
-        { imgSrc: mli, alt: 'Mlilures', description: 'MLI lures project made for a friend.', link: 'https://mlilures.se/', linkText: 'Live link' },
-        { imgSrc: harmoni, alt: 'Själsharmoni', description: 'Själsharmoni project for a healing business', link: 'https://www.xn--sjlsharmoni-m8a.se/', linkText: 'Live link' },
+        { imgSrc: mli, alt: 'Mlilures', description: 'MLI lures project made for a friend.', link: 'https://simonbeijer.github.io/mli-build/', linkText: 'Live link' },
+        { imgSrc: harmoni, alt: 'Själsharmoni', description: 'Själsharmoni project for a healing business', link: 'https://simonbeijer.github.io/Healing', linkText: 'Live link' },
         { imgSrc: app, alt: 'Scorify', description: 'Scorify is a final project with ReactNative', link: 'https://github.com/FThelin/mitt-lag---frontend', linkText: 'GitHub link' },
         { imgSrc: work, alt: 'Fizzbuzz', description: 'Fizzbuzz work test made in about 5 hours', link: 'https://simonbeijer.github.io/fizzbuzz/', linkText: 'Live link' }
       ]
@@ -61,7 +61,6 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(208, 208, 208);
   padding: 4rem 0;
 }
 

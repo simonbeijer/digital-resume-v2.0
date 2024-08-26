@@ -29,16 +29,18 @@ export default {
         { name: "WEB TECHNOLOGIES", size: "100%", title: true },
         { name: "HTML5", size: "95%" },
         { name: "CSS3", size: "80%" },
-        { name: "Vue", size: "80%" },
         { name: "JavaScript", size: "75%" },
-        { name: "React", size: "75%" },
         { name: "PHP", size: "75%" },
         { name: "SQL", size: "70%" },
-        { name: "TypeScript", size: "65%" },
+        { name: "TypeScript", size: "60%" },
         { name: "ReactNative", size: "60%" },
         { name: "MongoDB", size: "60%" },
         { name: "Redux", size: "50%" },
-        { name: "Angular", size: "40%" },
+        { name: "FRAMEWORKS", size: "100%", title: true },
+        { name: "Vue", size: "80%" },
+        { name: "React", size: "75%" },
+        { name: "Lavavel", size: "70%" },
+        { name: "Angular", size: "30%" },
         { name: "TOOLS", size: "100%", title: true },
         { name: "Mac", size: "95%" },
         { name: "Windows", size: "90%" },
@@ -72,7 +74,6 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(208, 208, 208);
   padding: 4rem 0;
 }
 

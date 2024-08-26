@@ -14,9 +14,9 @@
       <div class="details">
         <div class="sketchy">
           <h3>Details</h3>
-          <p><span class="sketchy-label">Name:</span> Simon Beijer</p>
-          <p><span class="sketchy-label">Age:</span> 33</p>
-          <p><span class="sketchy-label">Location:</span> Gothenburg,<br>Sweden</p>
+          <p><span class="sketchy-label">Name:</span> <span class="underlined">Simon Beijer</span></p>
+          <p><span class="sketchy-label">Age:</span> <span class="underlined">33</span></p>
+          <p><span class="sketchy-label">Location:</span> <span class="underlined">Gothenburg,<br>Sweden</span></p>
         </div>
         <div class="img-div">
           <div class="img-wrap">
@@ -54,6 +54,11 @@ export default {
 </script>
 
 <style scoped>
+.underlined {
+  text-decoration:underline;
+  text-decoration-color: grey;
+  text-underline-offset: 8px;
+}
 .content {
   position: relative;
   background-color: #ffffff;

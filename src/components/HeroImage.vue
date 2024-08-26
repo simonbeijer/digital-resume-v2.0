@@ -81,7 +81,7 @@ export default {
 }
 
 .line {
-  background: white;
+  background: rgb(234, 233, 233);
   height: 8px;
   width: 28vw;
   left: 20%;
@@ -115,6 +115,7 @@ h1 {
   height: 40px;
   background-image: url("../assets/down-arrow.png");
   background-size: contain;
+  margin-top: 18px;
 }
 
 .bounce {
@@ -124,19 +125,19 @@ h1 {
 
 @-webkit-keyframes bounce {
   0%, 20%, 50%, 80%, 100% { -webkit-transform: translateY(0); }
-  40% { -webkit-transform: translateY(-15px); }
+  40% { -webkit-transform: translateY(-20px); }
   60% { -webkit-transform: translateY(-5px); }
 }
 
 @-moz-keyframes bounce {
   0%, 15%, 50%, 80%, 100% { -moz-transform: translateY(0); }
-  40% { -moz-transform: translateY(-15px); }
+  40% { -moz-transform: translateY(-20px); }
   60% { -moz-transform: translateY(-5px); }
 }
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-  40% { transform: translateY(-15px); }
+  40% { transform: translateY(-20px); }
   60% { transform: translateY(-5px); }
 }
 
@@ -144,12 +145,12 @@ h1 {
   position: absolute;
   left: 78vw;
   bottom: 0;
-  width: 150px;
+  width: 151px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   padding: 10px 0;
   height: 60px;
   background: rgba(0, 0, 0, 0.5);
