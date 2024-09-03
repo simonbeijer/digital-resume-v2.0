@@ -31,7 +31,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 .hero-image {
-  background-image: url("../assets/img.jpg");
+  background-image: url("../assets/bg11.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -145,7 +145,7 @@ h1 {
   position: absolute;
   left: 78vw;
   bottom: 0;
-  width: 151px;
+  width: 156px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,6 +153,6 @@ h1 {
   border-top-right-radius: 8px;
   padding: 10px 0;
   height: 60px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgb(0 0 0 / 20%);
 }
 </style>

@@ -113,35 +113,40 @@ export default {
 .sketchy::before {
   border: 2px solid #353535;
 }
+/* HERO IMAGE BUTTON */
+.button-div {
+  /* background: rgb(0 0 0 / 20%); */
+}
+
 /* SIDEBAR COLORS */
 .sidebar-color {
-  background: rgb(209, 153, 107);
+  background: rgb(192, 198, 195);
 }
 .sidebar li {
-  background: rgb(248, 248, 248);
+  background: rgb(239, 247, 244);
 }
 .sidebar li a {
   color: rgb(39, 40, 39);
   font-weight: 600;
 }
-
-#profile {
-  background-color:whitesmoke !important;
-}
-#experience{
+/* BACKGROUND SECTIONS */
+#Profile {
   background-color: whitesmoke !important;
 }
-#skills {
-  background-color: whitesmoke !important;
+#Skills {
+  background-color: #ececec !important;
 }
-#education {
-  background-color: whitesmoke !important;
+#Experience{
+  background-color: #ececec !important;
 }
-#projects {
-  background-color: whitesmoke !important;
+#Education {
+  background-color: #ececec !important;
 }
-#contact {
-  background-color: lightgray !important;
+#Projects {
+  background-color: #ececec !important;
+}
+#Contact {
+  background-color: whitesmoke !important;
 }
 
 

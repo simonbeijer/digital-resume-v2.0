@@ -1,5 +1,5 @@
 <template>
-  <div id="profile" class="content">
+  <div class="content">
     <div class="col-1-div">
       <div class="about-div">
         <h1>ABOUT</h1>
@@ -61,20 +61,7 @@ export default {
 }
 .content {
   position: relative;
-  background-color: #ffffff;
 }
-/* 
-.content::before {
-  background-color: #ffffff;
-  content: "";
-  position: absolute;
-  top: -125px;
-  left: 0;
-  right: 0;
-  height: 126px;
-  clip-path: polygon(100% 0%, 0 100%, 100% 100%);
-  z-index: 0;
-} */
 
 .col-1-div {
   display: flex;
@@ -89,32 +76,6 @@ export default {
   padding: 2rem;
   text-align: center;
 }
-/* 
-.sketchy {
-  padding: 1rem 2rem;
-  display: inline-block;
-  border: 3px solid #333333;
-  font-size: 1rem;
-  border-radius: 8px; 
-  letter-spacing: 0.2ch;
-  background: #ffffff;
-  position: relative;
-  margin-bottom: 2rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.sketchy::before {
-  content: '';
-  border: 2px solid #353535;
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
-  border-radius: 8px;
-} */
 
 .details {
   display: flex;
@@ -122,7 +83,7 @@ export default {
 }
 
 .details > .sketchy {
-  flex: 1; /* Expand sketchy section to take available space */
+  flex: 1;
   padding: 2rem;
 }
 

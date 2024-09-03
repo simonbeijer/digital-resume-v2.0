@@ -1,5 +1,5 @@
 <template>
-  <div id="contact" class="grid-col-5">
+  <div class="contact-container grid-col-5">
     <div class="col-5-div display-flex">
       <div>
         <h2>CONTACT</h2>
@@ -64,10 +64,9 @@ export default {
 </script>
 
 <style scoped>
-#contact {
-  background-color: #ffffff;
-  width: 100%;
-  padding: 2rem  0rem 1rem 0rem;
+.contact-container {
+  /* width: 100%; */
+  padding: 6rem  0rem 1rem 0rem;
 }
 
 .col-5-div {
@@ -76,7 +75,7 @@ export default {
 }
 
 h2 {
-  margin-top: 4rem;
+  margin:0;
   text-align: center;
 }
 
