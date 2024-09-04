@@ -100,7 +100,6 @@ export default {
 .img-wrap img {
   border-radius: 50%;
   display: block;
-  width: 100%; 
   height: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.27);
 }
