@@ -106,7 +106,7 @@ export default {
 .experience-text {
   margin-bottom: 1rem;
   width: 90%;
-  margin-left: 20px;
+  margin-left: 50px;
 }
 
 .experience-text h3 {

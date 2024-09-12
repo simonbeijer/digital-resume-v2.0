@@ -83,7 +83,7 @@ export default {
 }
 
 .skills-wrapper {
-  width: 900px;
+  width: 850px;
   background-color: white;
   padding: 2rem;
   border-radius: 8px;

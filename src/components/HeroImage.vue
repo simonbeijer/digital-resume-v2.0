@@ -12,7 +12,7 @@
         <p>Web Developer</p>
       </div>
     </div>
-    <div class="button-div sidebar-color">
+    <div class="button-div sidebar-color" @click="scrollToAbout">
       <div class="arrow bounce" alt="scroll-down"></div>
     </div>
   </div>
@@ -23,6 +23,11 @@ export default {
   name: 'HeroImage',
   mounted() {
     this.$emit('sectionMounted', 'HeroImage');
+  },
+  methods: {
+    scrollToAbout() {
+      this.$emit('displayProfile', 'About');
+    },
   }
 };
 </script>

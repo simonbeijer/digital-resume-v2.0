@@ -2,7 +2,7 @@
   <div id="app" ref="appContainer">
     <CustomSidebar :sidebarSections="sidebarSections" :scrollTop="scrollTop" :firstSectionHeight="firstSectionHeight"  @sectionMounted="scrollToSection"/>
     <div class="main-content">
-      <HeroImage ref="heroImage" />
+      <HeroImage @displayProfile="scrollToSection" ref="heroImage" />
       <Profile  id="Profile" />
       <Skills  id="Skills" />
       <Experience id="Experience" />
@@ -131,7 +131,7 @@ export default {
 }
 /* BACKGROUND SECTIONS */
 #Profile {
-  background-color: whitesmoke !important;
+  background-color: rgb(255, 255, 255) !important;
 }
 #Skills {
   background-color: #ececec !important;
@@ -146,7 +146,7 @@ export default {
   background-color: #ececec !important;
 }
 #Contact {
-  background-color: whitesmoke !important;
+  background-color: rgb(255, 255, 255) !important;
 }
 
 
