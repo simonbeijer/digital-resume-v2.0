@@ -8,7 +8,7 @@
         <div class="project projektDiv" v-for="project in projects" :key="project.alt">
           <img :src="project.imgSrc" :alt="project.alt" class="project-image" />
           <p>{{ project.description }}</p>
-          <a class="project-link" :href="project.link" target="_blank" rel="noreferrer">
+          <a class="project-link" :href="project.link" target="_blank">
             {{ project.linkText }}
           </a>
         </div>
@@ -104,6 +104,7 @@ export default {
 .project-link {
   text-decoration: none;
   color: rgb(137, 184, 138);
+  z-index: 10;
 }
 
 .flex-row {

@@ -101,6 +101,8 @@ export default {
   color: rgb(138, 184, 138);
   text-decoration: none;
   font-weight: 500;
+  position: relative;
+  z-index: 10;
 }
 
 .education-item a:hover {

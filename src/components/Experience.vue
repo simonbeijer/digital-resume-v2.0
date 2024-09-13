@@ -116,4 +116,14 @@ export default {
 .experience-text p {
   margin-bottom: 5px;
 }
+
+.experience-text a {
+  color: rgb(138, 184, 138);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  z-index: 10;
+}
+
+
 </style>
