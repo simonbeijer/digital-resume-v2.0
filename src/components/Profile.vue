@@ -39,7 +39,7 @@ export default {
   },
   mounted() {
     window.addEventListener('resize', this.updateDimensions);
-    this.updateDimensions(); // Initialize dimensions
+    this.updateDimensions();
   },
   beforeDestroy() {
     window.removeEventListener('resize', this.updateDimensions);

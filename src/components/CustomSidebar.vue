@@ -1,5 +1,5 @@
 <template>
-  <div v-if="firstSectionHeight" class="sidebar sidebar-color" :style="{ marginTop: sidebarTop }" ref="sidebar">
+  <div class="sidebar sidebar-color" :style="{ marginTop: sidebarTop }" ref="sidebar">
     <ul>
       <li v-for="section in sidebarSections" :key="section" @click="selectSection(section)" class="hover">
         <a href="#">{{ section }}</a>
@@ -36,28 +36,12 @@ export default {
       if(this.scrollTop > halfwayPoint) {
         topPosition = this.firstSectionHeight - halfwayPoint
       }
-      // if (this.scrollTop > halfwayPoint) {
-      //   topPosition = halfwayPoint;
-      // } else if (this.scrollTop > 0) {
-      //   topPosition -= this.scrollTop + 203;
-      // }
-      console.clear();
-      console.log("halfwayPoint", halfwayPoint)
-      console.log("first section", this.firstSectionHeight)
-      console.log("main scroll", this.scrollTop)
-      console.log("topPosition sidebar", topPosition)
       return `${topPosition}px`;
     }
-  },
-  watch: {
-    // sidebarTop(newValue, oldValue) {
-    //   console.log("Top position changed:", newValue, oldValue);
-    // }
   },
   methods: {
     selectSection(section) {
       this.$emit('sectionMounted', section);
-      console.log(section);
     }
   }
 };

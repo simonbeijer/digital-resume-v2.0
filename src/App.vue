@@ -65,7 +65,6 @@ export default {
     },
     scrollToSection(sectionId) {
 
-      console.log(sectionId)
       if(sectionId == 'About') {
         sectionId = 'Profile'
       }
