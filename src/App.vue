@@ -1,14 +1,26 @@
 <template>
   <div id="app" ref="appContainer">
-    <CustomSidebar :sidebarSections="sidebarSections" :scrollTop="scrollTop" :firstSectionHeight="firstSectionHeight"  @sectionMounted="scrollToSection"/>
+    <CustomSidebar :sidebarSections="sidebarSections" :scrollTop="scrollTop" :firstSectionHeight="firstSectionHeight" @sectionMounted="scrollToSection"/>
     <div class="main-content">
       <HeroImage @displayProfile="scrollToSection" ref="heroImage" />
-      <Profile  id="Profile" />
-      <Skills  id="Skills" />
-      <Experience id="Experience" />
-      <Education id="Education" />
-      <Projects id="Projects" />
-      <Contact  id="Contact" />
+      <Section id="Profile">
+        <Profile />
+      </Section>
+      <Section id="Skills">
+        <Skills />
+      </Section>
+      <Section id="Experience">
+        <Experience />
+      </Section>
+      <Section id="Education">
+        <Education />
+      </Section>
+      <Section id="Projects">
+        <Projects />
+      </Section>
+      <Section id="Contact">
+        <Contact />
+      </Section>
     </div>
   </div>
 </template>
@@ -22,6 +34,7 @@ import Skills from './components/Skills.vue';
 import Education from './components/Education.vue';
 import Projects from './components/Projects.vue';
 import Contact from './components/Contact.vue';
+import Section from './components/Sections.vue';
 
 export default {
   name: 'App',
@@ -34,6 +47,7 @@ export default {
     Education,
     Projects,
     Contact,
+    Section
   },
   data() {
     return {
