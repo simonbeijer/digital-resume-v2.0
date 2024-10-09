@@ -1,0 +1,20 @@
+name: Deploy to GitHub Pages
+
+# Trigger the action when something is pushed to the gh-pages branch
+on: 
+  push:
+    branches:
+      - gh-pages
+
+jobs:
+  deploy_job:
+    runs-on: ubuntu-latest  # Use Ubuntu as the runner
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Step 2: Print deployment message
+      - name: Print Deployment Status
+        run: echo "Deployed to GitHub Pages!"
