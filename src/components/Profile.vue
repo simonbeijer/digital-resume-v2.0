@@ -15,13 +15,11 @@
         <div class="sketchy">
           <h3>Details</h3>
           <p><span class="sketchy-label">Name:</span> <span class="underlined">Simon Beijer</span></p>
-          <p><span class="sketchy-label">Age:</span> <span class="underlined">33</span></p>
+          <p><span class="sketchy-label">Age:</span> <span class="underlined">34</span></p>
           <p><span class="sketchy-label">Location:</span> <span class="underlined">Gothenburg,<br>Sweden</span></p>
         </div>
-        <div class="img-div">
-          <div class="img-wrap">
-            <img alt="simon" src="../assets/sb2.png">
-          </div>
+        <div class="sketchy img-div">
+            <img class="sketchy" alt="simon" src="../assets/me.png">
         </div>
       </div>
     </div>
@@ -79,29 +77,26 @@ export default {
 
 .details {
   display: flex;
+  justify-content: space-evenly;
+  align-items:  center;
   padding: 3rem 0rem;
 }
 
 .details > .sketchy {
   flex: 1;
-  padding: 2rem;
+  margin: 0 5rem;  
 }
 
 .img-div {
-  display: flex;
-  justify-content: flex-end;
+  flex: 1;
+  margin: 0 5rem;  
 }
 
-.img-wrap {
-  position: relative;
-  width: 60%; 
-}
 
-.img-wrap img {
-  border-radius: 50%;
-  display: block;
-  height: auto;
+.img-div img {
+  width: 300px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.27);
+  padding: 2px !important;
 }
 
 .content h2 {
