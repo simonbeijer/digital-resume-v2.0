@@ -94,7 +94,7 @@ export default {
 
 
 .img-div img {
-  width: 300px;
+  width: 270px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.27);
   padding: 2px !important;
 }

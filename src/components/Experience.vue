@@ -11,7 +11,7 @@
             2021-2024 - Full-time employee
           </h3>
         </div>
-        <div class="experience-text sketchy">
+        <div class="experience-text sketchy" >
           <h3>Developer, Keeros Göteborg, Gothenburg</h3>
           <p>Full-time position in front-end development for Keeros AB (Fintech)</p>
           <p>Including full-stack development and responsibility for company support.</p>

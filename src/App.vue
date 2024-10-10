@@ -128,7 +128,7 @@ export default {
 
 <style>
 .sketchy {
-  padding: 1rem 2rem;
+  padding: 1rem;
   display: inline-block;
   font-size: 1rem;
   border-radius: 8px;
