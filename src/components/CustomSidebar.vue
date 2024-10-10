@@ -1,5 +1,5 @@
 <template>
-  <div class="sidebar sidebar-color" :style="{ marginTop: sidebarTop }" ref="sidebar">
+  <div class="sidebar sidebar-color" :style="{ marginTop: setYPostion, marginLeft: getXPostion }" ref="sidebar">
     <ul>
       <li v-for="section in sidebarSections" :key="section" @click="selectSection(section)" class="hover">
         <a href="#">{{ section }}</a>
@@ -23,21 +23,25 @@ export default {
     firstSectionHeight: {
       type: Number,
       default: 0
-    }
+    },
+    getXPostion:{
+      type: String,
+      default: "0px",
+    },
   },
   computed: {
-    sidebarTop() {
+    setYPostion() {
       const halfwayPoint = this.firstSectionHeight / 1.4;
-      let topPosition = this.firstSectionHeight;
+      let xPosition = this.firstSectionHeight;
 
       if(this.scrollTop > 0) {
-        topPosition -= this.scrollTop;
+        xPosition -= this.scrollTop;
       }
       if(this.scrollTop > halfwayPoint) {
-        topPosition = this.firstSectionHeight - halfwayPoint
+        xPosition = this.firstSectionHeight - halfwayPoint
       }
-      return `${topPosition}px`;
-    }
+      return `${xPosition}px`;
+    },
   },
   methods: {
     selectSection(section) {
@@ -52,7 +56,6 @@ export default {
 .sidebar {
   display: flex;
   position: fixed;
-  left: 78vw;
   padding: 20px;
   z-index: 1000;
   transition: top 0.3s ease;

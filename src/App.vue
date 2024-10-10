@@ -1,8 +1,9 @@
 <template>
   <div id="app" ref="appContainer">
-    <CustomSidebar :sidebarSections="sidebarSections" :scrollTop="scrollTop" :firstSectionHeight="firstSectionHeight" @sectionMounted="scrollToSection"/>
+    <CustomSidebar v-if="displaySidebar" :sidebarSections="sidebarSections" :scrollTop="scrollTop"
+      :firstSectionHeight="firstSectionHeight" @sectionMounted="scrollToSection" :getXPostion="sidebarXPosition" />
     <div class="main-content">
-      <HeroImage @displayProfile="scrollToSection" ref="heroImage" />
+      <HeroImage @displayProfile="scrollToSection" ref="heroImage" :buttonPostion="sidebarXPosition"/>
       <Section id="Profile">
         <Profile />
       </Section>
@@ -54,10 +55,13 @@ export default {
       sidebarSections: ['About', 'Education', 'Experience', 'Skills', 'Projects', 'Contact'],
       scrollTop: 0,
       firstSectionHeight: 0,
+      sidebarXPosition: "0px",
+      displaySidebar: true,
     };
   },
   mounted() {
     this.updateFirstSectionHeight();
+    this.setXPostionSidebar();
     this.$refs.appContainer.addEventListener('scroll', this.handleScroll);
     window.addEventListener('resize', this.handleResize);
   },
@@ -76,19 +80,50 @@ export default {
     },
     handleResize() {
       this.updateFirstSectionHeight();
+      this.setXPostionSidebar();
     },
     scrollToSection(sectionId) {
-
-      if(sectionId == 'About') {
-        sectionId = 'Profile'
+      if (sectionId == 'About') {
+        sectionId = 'Profile';
       }
       const element = document.getElementById(sectionId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
+    },
+    setXPostionSidebar() {
+      const screenWidth = window.innerWidth;
+      const sidebarWidth = 156;
+      let dynamicRatio;
+
+      if(screenWidth <= 1400) {
+        this.displaySidebar = false;
+        return
+      } else {
+        this.displaySidebar = true;
+      }
+
+      if (screenWidth >= 2000) {
+        dynamicRatio = 0.80;
+      } else if (screenWidth >= 1700) {
+        dynamicRatio = 0.90;
+      } else if (screenWidth >= 1600) {
+        dynamicRatio = 0.95;
+      } else if (screenWidth >= 1400) {
+        dynamicRatio = 0.97;
+      } 
+      
+
+      let xPosition = (screenWidth - sidebarWidth) * dynamicRatio;
+
+
+      this.sidebarXPosition = `${Math.max(0, xPosition)}px`;
+      console.log(`Screen Width: ${screenWidth}, Dynamic Ratio: ${dynamicRatio}, xPosition: ${this.sidebarXPosition}`);
     }
   },
+
 };
+
 </script>
 
 
@@ -97,11 +132,11 @@ export default {
   padding: 1rem 2rem;
   display: inline-block;
   font-size: 1rem;
-  border-radius: 8px; 
+  border-radius: 8px;
   letter-spacing: 0.2ch;
   background: #ffffff;
   position: relative;
-  margin-bottom: 2rem; 
+  margin-bottom: 2rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -120,13 +155,18 @@ export default {
 
 /* THEME COLORS */
 
+.section-header {
+  font-size: 48px;
+}
 
 .sketchy {
   border: 3px solid #4f4f4f;
 }
+
 .sketchy::before {
   border: 2px solid #353535;
 }
+
 /* HERO IMAGE BUTTON */
 .button-div {
   /* background: rgb(0 0 0 / 20%); */
@@ -136,29 +176,37 @@ export default {
 .sidebar-color {
   background: rgb(192, 198, 195);
 }
+
 .sidebar li {
   background: rgb(239, 247, 244);
 }
+
 .sidebar li a {
   color: rgb(39, 40, 39);
   font-weight: 600;
 }
+
 /* BACKGROUND SECTIONS */
 #Profile {
   background-color: rgb(255, 255, 255) !important;
 }
+
 #Skills {
   background-color: #ececec !important;
 }
-#Experience{
+
+#Experience {
   background-color: #ececec !important;
 }
+
 #Education {
   background-color: #ececec !important;
 }
+
 #Projects {
   background-color: #ececec !important;
 }
+
 #Contact {
   background-color: rgb(255, 255, 255) !important;
 }
@@ -166,7 +214,8 @@ export default {
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-html, body {
+html,
+body {
   font-family: 'Ubuntu', sans-serif;
   margin: 0;
   padding: 0;
@@ -186,6 +235,4 @@ html, body {
   position: relative;
 
 }
-
-
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div id="projects" class="projects-container">
     <div class="projects-header">
-      <h2>PROJECTS</h2>
+      <h2 class="section-header">PROJECTS</h2>
     </div>
     <div class="projects-wrapper sketchy">
       <div class="projects-content" :class="projectContainerClass">

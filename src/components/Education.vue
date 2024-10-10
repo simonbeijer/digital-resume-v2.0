@@ -1,7 +1,7 @@
 <template>
   <div id="education" class="education-container">
     <div class="education-header">
-      <h2>Education</h2>
+      <h2 class="section-header">Education</h2>
     </div>
     <div class="education-wrapper">
       <div class="education-item">

@@ -2,7 +2,7 @@
   <div class="contact-container grid-col-5">
     <div class="col-5-div display-flex">
       <div>
-        <h2>CONTACT</h2>
+        <h2 class="section-header">CONTACT</h2>
       </div>
       <div class="footer-div" :class="width > 800 ? 'center-icons' : ''">
         <a

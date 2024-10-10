@@ -16,5 +16,5 @@ COPY . .
 # Expose the port your app runs on
 EXPOSE 8080
 
-# Command to run your application
-CMD ["npm", "run", "serve"]
+# Command to run your application with hot reloading
+CMD ["npm", "run", "serve", "--", "--host", "0.0.0.0"]

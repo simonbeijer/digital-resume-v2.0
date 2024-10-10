@@ -6,13 +6,13 @@
       <a class="linkedin" href=""></a>
     </div>
     <div class="hero-text">
-      <h1>SIMON BEIJER</h1>
+      <h1 style="font-size: 56px;">SIMON BEIJER</h1>
       <div class="line"></div>
       <div class="label">
         <p>Web Developer</p>
       </div>
     </div>
-    <div class="button-div sidebar-color" @click="scrollToAbout">
+    <div :style="{ marginLeft: buttonPostion }" class="button-div sidebar-color" @click="scrollToAbout">
       <div class="arrow bounce" alt="scroll-down"></div>
     </div>
   </div>
@@ -21,6 +21,12 @@
 <script>
 export default {
   name: 'HeroImage',
+  props: {
+    buttonPostion: {
+      type: String,
+      default: "0px"
+    },
+  },
   mounted() {
     this.$emit('sectionMounted', 'HeroImage');
   },
@@ -148,7 +154,6 @@ h1 {
 
 .button-div {
   position: absolute;
-  left: 78vw;
   bottom: 0;
   width: 156px;
   display: flex;

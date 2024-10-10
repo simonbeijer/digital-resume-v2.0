@@ -1,7 +1,7 @@
 <template>
   <div id="skills" class="skills-container">
     <div class="sketchy-line"></div>
-    <h2 class="skills-heading">SKILLS</h2>
+    <h2 class="skills-heading section-header">SKILLS</h2>
     <div :class="{ 'col-3-div': width < 600, 'max-width': width >= 600 }" class="skills-wrapper sketchy">
       <div v-for="(content, index) in skillArr" :key="index" class="skill-item">
         <div v-if="content.title" class="title-item">
@@ -66,6 +66,7 @@ export default {
   methods: {
     handleResize() {
       this.width = window.innerWidth;
+
     },
   },
 };

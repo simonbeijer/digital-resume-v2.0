@@ -2,7 +2,7 @@
   <div class="content">
     <div class="col-1-div">
       <div class="about-div">
-        <h1>ABOUT</h1>
+        <h2 class="section-header">ABOUT</h2>
         <div class="sketchy">
           <p>Hi! My name is Simon and I'm a Front-End Web Developer 👨🏼‍💻</p>
           <p>Right now I'm looking for a new job in Front-End development.</p>
@@ -104,8 +104,7 @@ export default {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.27);
 }
 
-.content h1 {
-  font-size: 2.4rem;
+.content h2 {
   padding-bottom: 2rem;
 }
 
