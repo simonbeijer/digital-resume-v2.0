@@ -5,12 +5,14 @@
     </div>
     <div class="projects-wrapper sketchy">
       <div class="projects-content" :class="projectContainerClass">
-        <div class="project projektDiv" v-for="project in projects" :key="project.alt">
-          <img :src="project.imgSrc" :alt="project.alt" class="project-image" />
-          <p>{{ project.description }}</p>
-          <a class="project-link" :href="project.link" target="_blank">
-            {{ project.linkText }}
+        <div class="project projektDiv" v-for="project in projects" :key="project.alt" style="position: relative;">
+          <a :href="project.link" target="_blank" class="project-image">
+            <img :src="project.imgSrc" :alt="project.alt" class="main-img" />
+            <div class="icon-div">
+              <img src="./../assets/tap.svg" alt="click" height="40px" width="40px" fill="red">
+            </div>
           </a>
+          <p>{{ project.description }}</p>
         </div>
       </div>
     </div>
@@ -61,12 +63,13 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem 0;
+  padding: 3rem 0;
+  margin-right: 20px;
 }
 
 .projects-header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .projects-wrapper {
@@ -91,20 +94,9 @@ export default {
   margin-bottom: 2rem;
 }
 
-.project img {
-  width: 100%;
-  max-width: 380px;
-  height: auto;
-  display: block;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow effect */
-}
+.main-img {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 
-.project-link {
-  text-decoration: none;
-  color: rgb(137, 184, 138);
-  z-index: 10;
 }
 
 .flex-row {
@@ -114,5 +106,22 @@ export default {
 
 .flex-column {
   flex-direction: column;
+}
+
+.icon-div {
+  position: absolute;
+  right: 35px;
+  top: 5px;
+  padding: 5px;
+  border-radius: 50%;
+  background: rgba(85, 85, 85, 0.119);
+  box-shadow: 0 0 3px 6px rgba(85, 85, 85, 0.119);
+  overflow: hidden;
+}
+
+.icon-div img {
+  border: none;
+  border-radius: 50%;
+  display: block;
 }
 </style>

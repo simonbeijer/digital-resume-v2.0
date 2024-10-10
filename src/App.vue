@@ -3,7 +3,7 @@
     <CustomSidebar v-if="displaySidebar" :sidebarSections="sidebarSections" :scrollTop="scrollTop"
       :firstSectionHeight="firstSectionHeight" @sectionMounted="scrollToSection" :getXPostion="sidebarXPosition" />
     <div class="main-content">
-      <HeroImage @displayProfile="scrollToSection" ref="heroImage" :buttonPostion="sidebarXPosition"/>
+      <HeroImage @displayProfile="scrollToSection" ref="heroImage" :buttonPostion="sidebarXPosition" :showButton="displaySidebar"/>
       <Section id="Profile">
         <Profile />
       </Section>
@@ -52,7 +52,7 @@ export default {
   },
   data() {
     return {
-      sidebarSections: ['About', 'Education', 'Experience', 'Skills', 'Projects', 'Contact'],
+      sidebarSections: ['About', 'Skills', 'Experience','Education', 'Projects', 'Contact'],
       scrollTop: 0,
       firstSectionHeight: 0,
       sidebarXPosition: "0px",
@@ -118,7 +118,6 @@ export default {
 
 
       this.sidebarXPosition = `${Math.max(0, xPosition)}px`;
-      console.log(`Screen Width: ${screenWidth}, Dynamic Ratio: ${dynamicRatio}, xPosition: ${this.sidebarXPosition}`);
     }
   },
 
@@ -151,10 +150,18 @@ export default {
   left: 50%;
   transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
   border-radius: 8px;
+  pointer-events: none;
 }
 
 /* THEME COLORS */
 
+.theme-bg-color {
+  background: #a7c4b5;
+}
+.theme-color {
+  color: #92bedd;
+  font-size: 18px;
+}
 .section-header {
   font-size: 48px;
 }
@@ -174,7 +181,8 @@ export default {
 
 /* SIDEBAR COLORS */
 .sidebar-color {
-  background: rgb(192, 198, 195);
+  background-image: url('assets/bg11.jpg');
+  -webkit-filter: grayscale(85%);
 }
 
 .sidebar li {

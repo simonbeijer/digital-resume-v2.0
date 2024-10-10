@@ -6,7 +6,7 @@
         <div class="sketchy">
           <p>Hi! My name is Simon and I'm a Front-End Web Developer 👨🏼‍💻</p>
           <p>Right now I'm looking for a new job in Front-End development.</p>
-          <p>I have 3 years of experience from my previous work at <a href="https://www.keeros.se" target="_blank">Keeeros AB</a>, and I'm now looking for a new opportunity.</p>
+          <p>I have 3 years of experience from my previous work at <a class="theme-color" href="https://www.keeros.se" target="_blank">Keeeros AB</a>, and I'm now looking for a new opportunity.</p>
           <p>In my spare time, I like to work out, sit at my computer, and create music.</p>
           <p>I enjoy creating alluring websites, and I'm always looking to improve.</p>
         </div>
@@ -112,7 +112,6 @@ export default {
   font-weight: bold;
 }
 .about-div a {
-  color: rgb(138, 184, 138);
   text-decoration: none;
   font-weight: 500;
   position: relative;

@@ -32,7 +32,7 @@
           <h3>Developer, Hive and Five, Borås, Distance</h3>
           <p>Internship in front-end development at my Media Institute's teachers company, mostly remote.</p>
           <p>Worked on a mobile application in React Native with Redux.</p>
-          <p>Also involved in developing new functionality for Hive and Five's website <a
+          <p>Also involved in developing new functionality for Hive and Five's website <a class="theme-color"
               href="https://adventurehero.se" target="_blank">adventurehero.se</a> using React and TypeScript.</p>
         </div>
       </div>
@@ -86,7 +86,7 @@ export default {
 .experience-container {
   display: flex;
   justify-content: center;
-  padding: 4rem 0;
+  padding: 3rem 0;
   flex-direction: column;
   align-items: center;
 }
@@ -100,7 +100,6 @@ export default {
 
 .experience-header {
   text-align: center;
-  margin-bottom: 1.5rem;
 }
 
 .experience-text {
@@ -118,7 +117,6 @@ export default {
 }
 
 .experience-text a {
-  color: rgb(138, 184, 138);
   text-decoration: none;
   font-weight: 500;
   position: relative;

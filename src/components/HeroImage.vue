@@ -12,7 +12,10 @@
         <p>Web Developer</p>
       </div>
     </div>
-    <div :style="{ marginLeft: buttonPostion }" class="button-div sidebar-color" @click="scrollToAbout">
+    <div :style="{
+        marginLeft: showButton ? buttonPostion : 'none',
+        right: showButton ? 'auto' : '43%',
+      }" class="button-div sidebar-color" @click="scrollToAbout">
       <div class="arrow bounce" alt="scroll-down"></div>
     </div>
   </div>
@@ -23,6 +26,10 @@ export default {
   name: 'HeroImage',
   props: {
     buttonPostion: {
+      type: String,
+      default: "0px"
+    },
+    showButton: {
       type: String,
       default: "0px"
     },

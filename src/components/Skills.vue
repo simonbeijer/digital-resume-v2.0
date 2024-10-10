@@ -1,7 +1,8 @@
 <template>
   <div id="skills" class="skills-container">
-    <div class="sketchy-line"></div>
-    <h2 class="skills-heading section-header">SKILLS</h2>
+    <div class="skills-heading">
+      <h2 class="section-header">SKILLS</h2>
+    </div>
     <div :class="{ 'col-3-div': width < 600, 'max-width': width >= 600 }" class="skills-wrapper sketchy">
       <div v-for="(content, index) in skillArr" :key="index" class="skill-item">
         <div v-if="content.title" class="title-item">
@@ -11,7 +12,7 @@
           <div class="ability-name">
             <p>{{ content.name }}</p>
           </div>
-          <div class="ability-bar" :style="{ width: content.size }">
+          <div class="ability-bar theme-bg-color" :style="{ width: content.size }">
             <span class="ability-label">{{ content.size }}</span>
           </div>
         </div>
@@ -77,7 +78,8 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem 0;
+  padding: 3rem 0;
+  margin-left: 20px;
 }
 
 .skills-heading {
@@ -112,7 +114,6 @@ export default {
 }
 
 .ability-bar {
-  background-color: #a7c4b5;
   height: 12px;
   border-radius: 6px;
   position: relative;
