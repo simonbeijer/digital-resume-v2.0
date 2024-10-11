@@ -107,8 +107,8 @@ export default {
 
 .icon-div {
   position: absolute;
-  right: 35px;
-  top: 5px;
+  right: 44px;
+  top: -20px;
   padding: 5px;
   border-radius: 50%;
   background: rgba(85, 85, 85, 0.119);
