@@ -11,7 +11,7 @@
             2021-2024 - Full-time employee
           </h3>
         </div>
-        <div class="experience-text sketchy" >
+        <div class="experience-text sketchy" style="padding: 1rem 2rem !important;">
           <h3>Developer, Keeros Göteborg, Gothenburg</h3>
           <p>Full-time position in front-end development for Keeros AB (Fintech)</p>
           <p>Including full-stack development and responsibility for company support.</p>
@@ -28,7 +28,7 @@
             2020-2021 - Internship
           </h3>
         </div>
-        <div class="experience-text sketchy">
+        <div class="experience-text sketchy" style="padding: 1rem 2rem !important;">
           <h3>Developer, Hive and Five, Borås, Distance</h3>
           <p>Internship in front-end development at my Media Institute's teachers company, mostly remote.</p>
           <p>Worked on a mobile application in React Native with Redux.</p>
@@ -41,7 +41,7 @@
           <div class="circle"></div>
           <h3>2020 - Summer employee</h3>
         </div>
-        <div class="experience-text sketchy">
+        <div class="experience-text sketchy" style="padding: 1rem 2rem !important;">
           <h3>Developer, Imseb, Gothenburg</h3>
           <p>Summer job in web development remotely. Worked on creating a website in Vue based on a finished design for
             an American client.</p>

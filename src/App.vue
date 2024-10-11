@@ -159,7 +159,7 @@ export default {
   background: #a7c4b5;
 }
 .theme-color {
-  color: #92bedd;
+  color: #508ab3;
   font-size: 18px;
 }
 .section-header {

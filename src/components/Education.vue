@@ -9,7 +9,7 @@
           <div class="circle"></div>
           <h3>2019-2021 - Front-End</h3>
         </div>
-        <div class="education-text sketchy">
+        <div class="education-text sketchy" style="padding: 1rem 2rem !important;">
           <h3>Medieinstitutet Gothenburg</h3>
           <p>This is a two-year program with the main focus on Front-End development. It also includes LIA where you get to use your skills in a real workplace.</p>
           <p>The first course starts with HTML5, CSS3, and JavaScript. Then on to more programming with TypeScript, Node.js, React. Also includes Back-End, UX, dynamic, and agile web development.</p>
@@ -21,7 +21,7 @@
           <div class="circle"></div>
           <h3>2018-2019 - Full-Stack</h3>
         </div>
-        <div class="education-text sketchy">
+        <div class="education-text sketchy" style="padding: 1rem 2rem !important;">
           <h3>Blekinge Institute of Technology</h3>
           <p>This was a course with a mixture between Front-End and Back-End programming. The first two courses were Front-End with CSS3, HTML5, PHP, and SQL. Subjects including design and UX.</p>
           <p>The other two courses were Back-End with PHP, JavaScript, Node, and SQL. Subjects including Object-Oriented-Programming, API's, frameworks, and databases.</p>
