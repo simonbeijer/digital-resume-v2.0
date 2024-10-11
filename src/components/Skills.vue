@@ -1,8 +1,5 @@
 <template>
   <div id="skills" class="skills-container">
-    <div class="skills-heading">
-      <h2 class="section-header">SKILLS</h2>
-    </div>
     <div :class="{ 'col-3-div': width < 600, 'max-width': width >= 600 }" class="skills-wrapper sketchy">
       <div v-for="(content, index) in skillArr" :key="index" class="skill-item">
         <div v-if="content.title" class="title-item">
@@ -79,7 +76,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 0;
+  padding: 1rem 0;
   margin-left: 20px;
 }
 

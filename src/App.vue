@@ -52,7 +52,7 @@ export default {
   },
   data() {
     return {
-      sidebarSections: ['About', 'Skills', 'Experience','Education', 'Projects', 'Contact'],
+      sidebarSections: ['Profile', 'Skills', 'Experience','Education', 'Projects', 'Contact'],
       scrollTop: 0,
       firstSectionHeight: 0,
       sidebarXPosition: "0px",
@@ -83,9 +83,7 @@ export default {
       this.setXPostionSidebar();
     },
     scrollToSection(sectionId) {
-      if (sectionId == 'About') {
-        sectionId = 'Profile';
-      }
+
       const element = document.getElementById(sectionId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
@@ -164,6 +162,8 @@ export default {
 }
 .section-header {
   font-size: 48px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .sketchy {

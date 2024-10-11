@@ -1,8 +1,5 @@
 <template>
   <div id="projects" class="projects-container">
-    <div class="projects-header">
-      <h2 class="section-header">PROJECTS</h2>
-    </div>
     <div class="projects-wrapper sketchy">
       <div class="projects-content" :class="projectContainerClass">
         <div class="project projektDiv" v-for="project in projects" :key="project.alt" style="position: relative;">

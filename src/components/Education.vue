@@ -1,8 +1,5 @@
 <template>
   <div id="education" class="education-container">
-    <div class="education-header">
-      <h2 class="section-header">Education</h2>
-    </div>
     <div class="education-wrapper">
       <div class="education-item">
         <div class="education-timeline">
@@ -66,7 +63,7 @@ export default {
 .education-container {
   display: flex;
   justify-content: center;
-  padding: 3rem 0;
+  padding: 1rem 0;
   flex-direction: column;
   align-items: center;
 }

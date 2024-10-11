@@ -1,5 +1,6 @@
 <template>
     <section :id="id">
+      <h2 class="section-header">{{id}}</h2>
       <slot></slot>
     </section>
   </template>

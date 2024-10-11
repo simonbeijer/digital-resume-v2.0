@@ -1,9 +1,6 @@
 <template>
-  <div class="contact-container grid-col-5">
+  <div class="grid-col-5">
     <div class="col-5-div display-flex">
-      <div>
-        <h2 class="section-header">CONTACT</h2>
-      </div>
       <div class="footer-div" :class="width > 800 ? 'center-icons' : ''">
         <a
           href="https://www.linkedin.com/in/simon-beijer-a27b37181?trk=people-guest_profile-result-card_result-card_full-click&originalSubdomain=se"
@@ -64,11 +61,6 @@ export default {
 </script>
 
 <style scoped>
-.contact-container {
-  /* width: 100%; */
-  padding: 6rem  0rem 1rem 0rem;
-}
-
 .col-5-div {
   flex-direction: column;
   align-items: center;

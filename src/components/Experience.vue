@@ -1,8 +1,5 @@
 <template>
   <div id="experience" class="experience-container">
-    <div class="experience-header">
-      <h2 class="section-header">Experience</h2>
-    </div>
     <div class="experience-wrapper">
       <div class="experience-item">
         <div class="experience-timeline">
@@ -86,7 +83,7 @@ export default {
 .experience-container {
   display: flex;
   justify-content: center;
-  padding: 3rem 0;
+  padding: 1rem 0;
   flex-direction: column;
   align-items: center;
 }

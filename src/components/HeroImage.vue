@@ -15,7 +15,7 @@
     <div :style="{
         marginLeft: showButton ? buttonPostion : 'none',
         right: showButton ? 'auto' : '43%',
-      }" class="button-div sidebar-color" @click="scrollToAbout">
+      }" class="button-div sidebar-color" @click="scrollToProfile">
       <div class="arrow bounce" alt="scroll-down"></div>
     </div>
   </div>
@@ -38,8 +38,8 @@ export default {
     this.$emit('sectionMounted', 'HeroImage');
   },
   methods: {
-    scrollToAbout() {
-      this.$emit('displayProfile', 'About');
+    scrollToProfile() {
+      this.$emit('displayProfile', 'Profile');
     },
   }
 };
