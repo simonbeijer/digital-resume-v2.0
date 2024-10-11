@@ -11,8 +11,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Force use of Node.js 20
-      - name: Set environment variable
+      # Step 1: Set environment variable to force Node.js 20
+      - name: Force Node.js 20
         run: echo "FORCE_JAVASCRIPT_ACTIONS_TO_NODE20=true" >> $GITHUB_ENV
 
       # Step 2: Checkout the repository
@@ -23,7 +23,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20'  # Specify Node.js version
+          node-version: '20'  # Ensure this is set to 20
 
       # Step 4: Install dependencies
       - name: Install dependencies
