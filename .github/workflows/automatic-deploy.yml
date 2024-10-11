@@ -12,16 +12,16 @@ jobs:
 
     steps:
       # Step 1: Force use of Node.js 20
-      - name: Force Node.js 20
+      - name: Set environment variable
         run: echo "FORCE_JAVASCRIPT_ACTIONS_TO_NODE20=true" >> $GITHUB_ENV
-      
+
       # Step 2: Checkout the repository
       - name: Checkout repository
-        uses: actions/checkout@v3  # Use the latest stable version
+        uses: actions/checkout@v3
 
       # Step 3: Set up Node.js environment
       - name: Set up Node.js
-        uses: actions/setup-node@v3  # Use the latest stable version
+        uses: actions/setup-node@v3
         with:
           node-version: '20'  # Specify Node.js version
 
