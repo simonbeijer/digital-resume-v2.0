@@ -43,6 +43,7 @@ export default {
         { name: "Vue", size: "80%" },
         { name: "Yii", size: "70%" },
         { name: "Lavavel", size: "60%" },
+        { name: "Next.js", size: "50%" },
         { name: "TOOLS", size: "100%", title: true },
         { name: "Mac", size: "95%" },
         { name: "Windows", size: "90%" },
