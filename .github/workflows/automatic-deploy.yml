@@ -13,11 +13,11 @@ jobs:
     steps:
       # Step 1: Checkout the repository
       - name: Checkout repository
-        uses: actions/checkout@v3.3.0  # Use a specific patch version
+        uses: actions/checkout@v3  # Using the latest stable version
 
       # Step 2: Set up Node.js environment
       - name: Set up Node.js
-        uses: actions/setup-node@v3.5.0  # Use a specific patch version
+        uses: actions/setup-node@v3  # Using the latest stable version
         with:
           node-version: '20'  # Specify Node.js version
 
@@ -35,7 +35,11 @@ jobs:
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
           git add .
-          git commit -m "Deploy to GitHub Pages" || echo "No changes to commit"  # Prevent error if there's nothing to commit
+          git commit -m "Deploy to GitHub Pages" || echo "No changes to commit"
           git push origin gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Authenticate the push to the gh-pages branch
+
+      # (Optional) Force Node.js 20 for testing
+      - name: Force Node.js 20
+        run: echo "FORCE_JAVASCRIPT_ACTIONS_TO_NODE20=true" >> $GITHUB_ENV
