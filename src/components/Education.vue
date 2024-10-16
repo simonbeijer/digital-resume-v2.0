@@ -8,9 +8,12 @@
         </div>
         <div class="education-text sketchy" style="padding: 1rem 2rem !important;">
           <h3>Medieinstitutet Gothenburg</h3>
-          <p>This is a two-year program with the main focus on Front-End development. It also includes LIA where you get to use your skills in a real workplace.</p>
-          <p>The first course starts with HTML5, CSS3, and JavaScript. Then on to more programming with TypeScript, Node.js, React. Also includes Back-End, UX, dynamic, and agile web development.</p>
-          <p><a class="theme-color" href="https://medieinstitutet.se/utbildningar/front-end-developer" target="_blank" rel="noreferrer">Medieinstitutet.se</a></p>
+          <p>This is a two-year program with the main focus on Front-End development. It also includes LIA where you get
+            to use your skills in a real workplace.</p>
+          <p>The first course starts with HTML5, CSS3, and JavaScript. Then on to more programming with TypeScript,
+            Node.js, React. Also includes Back-End, UX, dynamic, and agile web development.</p>
+          <p><a class="theme-color" href="https://medieinstitutet.se/utbildningar/front-end-developer" target="_blank"
+              rel="noreferrer">Medieinstitutet.se</a></p>
         </div>
       </div>
       <div class="education-item">
@@ -20,9 +23,12 @@
         </div>
         <div class="education-text sketchy" style="padding: 1rem 2rem !important;">
           <h3>Blekinge Institute of Technology</h3>
-          <p>This was a course with a mixture between Front-End and Back-End programming. The first two courses were Front-End with CSS3, HTML5, PHP, and SQL. Subjects including design and UX.</p>
-          <p>The other two courses were Back-End with PHP, JavaScript, Node, and SQL. Subjects including Object-Oriented-Programming, API's, frameworks, and databases.</p>
-          <p><a class="theme-color" href="https://dbwebb.se/utbildning/webbprogrammering-och-databaser-30hp" target="_blank" rel="noreferrer">BTH.se</a></p>
+          <p>This was a course with a mixture between Front-End and Back-End programming. The first two courses were
+            Front-End with CSS3, HTML5, PHP, and SQL. Subjects including design and UX.</p>
+          <p>The other two courses were Back-End with PHP, JavaScript, Node, and SQL. Subjects including
+            Object-Oriented-Programming, API's, frameworks, and databases.</p>
+          <p><a class="theme-color" href="https://dbwebb.se/utbildning/webbprogrammering-och-databaser-30hp"
+              target="_blank" rel="noreferrer">BTH.se</a></p>
         </div>
       </div>
     </div>
@@ -42,17 +48,17 @@ export default {
 .circle {
   height: 10px;
   width: 10px;
-  background: rgb(208, 208, 208);
+  background: #666464;
   position: absolute;
-  right: -10px;
+  right: -11px;
   top: 26px;
-  border: solid grey 4px;
+  border: solid #666464 4px;
   border-radius: 9999px;
 }
 
 .education-timeline {
   width: 50%;
-  border-right: grey solid 4px;
+  border-right: #666464 solid 4px;
   position: relative;
 }
 

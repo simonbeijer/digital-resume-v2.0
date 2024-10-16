@@ -62,16 +62,16 @@ export default {
 .circle {
   height: 10px;
   width: 10px;
-  background: rgb(208, 208, 208);;
+  background: #666464;
   position: absolute;
-  right: -10px;
+  right: -11px;
   top: 26px;
-  border: solid grey 4px;
+  border: solid #666464 4px;
   border-radius: 9999px;
 }
 .experience-timeline {
   width: 50%;
-  border-right: grey solid 4px;
+  border-right: #666464 solid 4px;
   position: relative;
 
 }

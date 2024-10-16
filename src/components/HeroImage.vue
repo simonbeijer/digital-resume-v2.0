@@ -13,8 +13,8 @@
       </div>
     </div>
     <div :style="{
-        marginLeft: showButton ? buttonPostion : 'none',
-        right: showButton ? 'auto' : '43%',
+        marginLeft: showButton ? buttonPostion : '0',
+        right: showButton ? 'auto' : 'calc(50% - 78px)',
       }" class="button-div sidebar-color" @click="scrollToProfile">
       <div class="arrow bounce" alt="scroll-down"></div>
     </div>
@@ -30,8 +30,8 @@ export default {
       default: "0px"
     },
     showButton: {
-      type: String,
-      default: "0px"
+      type: Boolean,
+      default: true
     },
   },
   mounted() {
@@ -101,7 +101,7 @@ export default {
 .line {
   background: rgb(234, 233, 233);
   height: 8px;
-  width: 28vw;
+  width: 480px;
   left: 20%;
   margin-bottom: 30px;
   border-radius: 3px;

@@ -80,18 +80,21 @@ h2 {
 }
 
 .gmail {
-  background-image: url("../assets/email.png");
+  background-image: url("../assets/email2.png");
   background-size: 6rem; /* Reduced size */
+  opacity: 0.9;
 }
 
 .github {
-  background-image: url("../assets/github-square.png");
+  background-image: url("../assets/github-square2.png");
   background-size: 5rem; /* Reduced size */
+  opacity: 0.9;
 }
 
 .linkedin {
-  background-image: url("../assets/linkedin.png");
+  background-image: url("../assets/linkedin2.png");
   background-size: 6rem; /* Reduced size */
+  opacity: 0.9;
 }
 
 .footer-div {

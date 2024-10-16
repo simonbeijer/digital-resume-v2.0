@@ -1,6 +1,6 @@
 <template>
   <div id="skills" class="skills-container">
-    <div :class="{ 'col-3-div': width < 600, 'max-width': width >= 600 }" class="skills-wrapper sketchy">
+    <div :class="{ 'col-3-div': width < 600, 'max-width': width >= 600 }" class="skills-wrapper ">
       <div v-for="(content, index) in skillArr" :key="index" class="skill-item">
         <div v-if="content.title" class="title-item">
           <p>{{ content.name }}</p>
@@ -90,7 +90,7 @@ export default {
   background-color: white;
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px #e6e4e4;
 }
 
 .skill-item {

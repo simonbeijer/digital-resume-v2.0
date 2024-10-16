@@ -134,7 +134,7 @@ export default {
   background: #ffffff;
   position: relative;
   margin-bottom: 2rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(232, 231, 231, 0.651);
 }
 
 
@@ -167,11 +167,11 @@ export default {
 }
 
 .sketchy {
-  border: 3px solid #4f4f4f;
+  border: 3px solid #a5a5a5;
 }
 
 .sketchy::before {
-  border: 2px solid #353535;
+  border: 2px solid #dfdede;
 }
 
 /* HERO IMAGE BUTTON */

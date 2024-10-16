@@ -7,12 +7,12 @@
           <p>Right now I'm looking for a new job in Front-End development.</p>
           <p>I have 3 years of experience from my previous work at <a class="theme-color" href="https://www.keeros.se"
               target="_blank">Keeeros AB</a>, and I'm now looking for a new opportunity.</p>
-              <p>In my spare time, I like to work out, create music, and work on my own web projects.</p>
+          <p>In my spare time, I like to work out, create music, and work on my own web projects.</p>
           <p>I enjoy creating alluring websites, and I'm always looking to improve.</p>
         </div>
       </div>
       <div class="details">
-        <div class="sketchy">
+        <div class="detailsInfo sketchy">
           <h3>Details</h3>
           <p><span class="sketchy-label">Name:</span> <span class="underlined">Simon Beijer</span></p>
           <p><span class="sketchy-label">Age:</span> <span class="underlined">34</span></p>
@@ -46,6 +46,7 @@ export default {
     updateDimensions() {
       this.width = window.innerWidth;
       this.height = window.innerHeight;
+      console.log("update")
     }
   }
 };
@@ -81,6 +82,15 @@ export default {
   justify-content: space-evenly;
   align-items: center;
   padding: 3rem 0rem;
+  flex-direction: row;
+}
+@media (max-width: 920px) {
+  .details {
+    flex-direction: column;
+  }
+  .detailsInfo {
+    margin-bottom: 2rem;
+  }
 }
 
 .details>.sketchy {

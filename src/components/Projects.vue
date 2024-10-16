@@ -1,6 +1,6 @@
 <template>
   <div id="projects" class="projects-container">
-    <div class="projects-wrapper sketchy">
+    <div class="projects-wrapper ">
       <div class="projects-content" :class="projectContainerClass">
         <div class="project projektDiv" v-for="project in projects" :key="project.alt" style="position: relative;">
           <a :href="project.link" target="_blank" class="project-image">
@@ -74,7 +74,7 @@ export default {
   background-color: white;
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 .projects-content {
@@ -92,7 +92,7 @@ export default {
 }
 
 .main-img {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 
 }
 
