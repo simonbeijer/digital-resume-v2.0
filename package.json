@@ -2,6 +2,7 @@
   "name": "digital-resume-v2.0",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://simonbeijer.github.io/digital-resume-v2.0",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
