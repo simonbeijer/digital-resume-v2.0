@@ -178,6 +178,7 @@ export default {
   font-size: 48px;
   text-align: center;
   text-transform: uppercase;
+  font-family: "Condiment", handwriting;
 }
 
 .sketchy {
@@ -235,6 +236,7 @@ export default {
 
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Condiment');
 
 html,
 body {

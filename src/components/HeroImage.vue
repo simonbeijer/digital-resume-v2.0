@@ -6,7 +6,7 @@
       <a class="linkedin" href=""></a>
     </div>
     <div class="hero-text">
-      <h1 style="font-size: 56px;">SIMON BEIJER</h1>
+      <h1>SIMON BEIJER</h1>
       <div class="line"></div>
       <div class="label">
         <p>Web Developer</p>
@@ -95,22 +95,25 @@ export default {
   color: white;
   text-align: left;
   padding: 20px;
-
+  font-family: "Condiment", handwriting;
+  letter-spacing: 4px;
 }
 
 .line {
   background: rgb(234, 233, 233);
   height: 8px;
-  width: 480px;
+  width: 580px;
   left: 20%;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   border-radius: 3px;
 }
 
 h1 {
-  font-size: 48px;
-  padding-left: 20px !important;
-  font-weight: 400;
+  font-size: 64px;
+  padding-left: 74px !important;
+  letter-spacing: 4px;
+  margin-bottom: 14px;
+  /* font-weight: 400; */
 }
 
 .label {
