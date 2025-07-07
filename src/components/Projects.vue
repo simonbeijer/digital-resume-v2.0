@@ -31,7 +31,7 @@ export default {
         { imgSrc: mli, alt: 'MLI Lures', description: 'Responsive fishing lure e-commerce website built with modern web technologies. Features product showcase, responsive design, and optimized user experience.', link: 'https://simonbeijer.github.io/mli-build/', linkText: 'Live link' },
         { imgSrc: harmoni, alt: 'Själsharmoni', description: 'Professional wellness business website with modern design, service booking functionality, and responsive layout for healing practice.', link: 'https://simonbeijer.github.io/Healing', linkText: 'Live link' },
         { imgSrc: app, alt: 'Scorify', description: 'React Native mobile application for sports team management. Final project featuring real-time updates, user authentication, and team collaboration tools.', link: 'https://github.com/FThelin/mitt-lag---frontend', linkText: 'GitHub link' },
-        { imgSrc: work, alt: 'FizzBuzz Challenge', description: 'Interactive FizzBuzz implementation with modern UI/UX design. Technical challenge completed with clean code architecture and responsive design.', link: 'https://simonbeijer.github.io/fizzbuzz/', linkText: 'Live link' }
+        { imgSrc: work, alt: 'personal letter LLM', description: 'Use and Large Laguage model (AI) to create the perfect personal letter, combine the jobb ad and CV to create your personal letter.', link: 'https://github.com/simonbeijer/personal-letter-llm', linkText: 'GitHub link' }
       ]
     };
   },

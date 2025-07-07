@@ -95,7 +95,6 @@ export default {
   color: white;
   text-align: left;
   padding: 20px;
-  font-family: "Condiment", handwriting;
   letter-spacing: 4px;
 }
 
@@ -113,6 +112,8 @@ h1 {
   padding-left: 44px !important;
   letter-spacing: 4px;
   margin-bottom: 14px;
+  font-family: "Condiment", handwriting;
+  transform: skewX(22deg);
   /* font-weight: 400; */
 }
 

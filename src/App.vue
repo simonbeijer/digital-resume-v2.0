@@ -179,6 +179,7 @@ export default {
   text-align: center;
   text-transform: uppercase;
   font-family: "Condiment", handwriting;
+  transform: skewX(24deg);
 }
 
 .sketchy {
