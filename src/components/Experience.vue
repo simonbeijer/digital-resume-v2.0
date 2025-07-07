@@ -9,13 +9,11 @@
           </h3>
         </div>
         <div class="experience-text sketchy" style="padding: 1rem 2rem !important;">
-          <h3>Developer, Keeros Göteborg, Gothenburg</h3>
-          <p>Full-time position in front-end development for Keeros AB (Fintech)</p>
-          <p>Including full-stack development and responsibility for company support.</p>
-          <p>Mainly worked with Vue on the front-end, PHP on the back-end, and MySQL database. Development was both
-            on-site and remote.</p>
-          <p>Engaged in both new development and maintenance of existing code. Primarily focused on the company's
-            various cloud platforms for invoice management.</p>
+          <h3>Front-End Developer, Keeros AB, Gothenburg</h3>
+          <p>Full-time position as Front-End Developer within fintech, with elements of full-stack development and support responsibilities.</p>
+          <p>Developed and maintained headless cloud platforms for invoice management using Vue.js, jQuery, PHP, and MySQL. Experience in both new development and maintenance of legacy codebases.</p>
+          <p>Worked both on-site and remotely using agile methodologies. Technologies used: Vue.js, jQuery, PHP, MySQL, Docker, Jest, Cypress, Figma.</p>
+          <p>Responsible for creating user-friendly interfaces and ensuring seamless integration between front-end and back-end systems.</p>
         </div>
       </div>
       <div class="experience-item">
@@ -26,11 +24,11 @@
           </h3>
         </div>
         <div class="experience-text sketchy" style="padding: 1rem 2rem !important;">
-          <h3>Developer, Hive and Five, Borås, Distance</h3>
-          <p>Internship in front-end development at my Media Institute's teachers company, mostly remote.</p>
-          <p>Worked on a mobile application in React Native with Redux.</p>
-          <p>Also involved in developing new functionality for Hive and Five's website <a class="theme-color"
-              href="https://adventurehero.se" target="_blank">adventurehero.se</a> using React and TypeScript.</p>
+          <h3>Front-End Developer Intern, Hive and Five, Borås</h3>
+          <p>Internship in front-end development, primarily remote work through Media Institute partnership.</p>
+          <p>Developed mobile application features using React Native with Redux for state management.</p>
+          <p>Created new functionality for <a class="theme-color"
+              href="https://adventurehero.se" target="_blank">adventurehero.se</a> using React and TypeScript, focusing on user experience and responsive design.</p>
         </div>
       </div>
       <div class="experience-item">
@@ -39,9 +37,9 @@
           <h3>2020 - Summer employee</h3>
         </div>
         <div class="experience-text sketchy" style="padding: 1rem 2rem !important;">
-          <h3>Developer, Imseb, Gothenburg</h3>
-          <p>Summer job in web development remotely. Worked on creating a website in Vue based on a finished design for
-            an American client.</p>
+          <h3>Web Developer, Imseb, Gothenburg</h3>
+          <p>Summer position in web development, working remotely to deliver client solutions.</p>
+          <p>Developed responsive website using Vue.js based on provided designs for American client, ensuring pixel-perfect implementation and cross-browser compatibility.</p>
         </div>
       </div>
     </div>
@@ -59,21 +57,18 @@ export default {
 </script>
 
 <style scoped>
-.circle {
-  height: 10px;
-  width: 10px;
-  background: #666464;
-  position: absolute;
-  right: -11px;
-  top: 26px;
-  border: solid #666464 4px;
-  border-radius: 9999px;
-}
+
 .experience-timeline {
   width: 50%;
-  border-right: #666464 solid 4px;
+  border-right: #828181 solid 3px;
   position: relative;
+  padding-right: 2rem;
+}
 
+.experience-timeline h3 {
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 .experience-item {

@@ -49,7 +49,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 .hero-image {
-  background-image: url("../assets/bg11.jpg");
+  background-image: url("../assets/bg13.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -170,6 +170,6 @@ h1 {
   border-top-right-radius: 8px;
   padding: 10px 0;
   height: 60px;
-  background: rgb(0 0 0 / 20%);
+  background: rgb(0 0 0 / 50%);
 }
 </style>

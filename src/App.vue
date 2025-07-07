@@ -125,6 +125,20 @@ export default {
 
 
 <style>
+
+.circle {
+  height: 12px;
+  width: 12px;
+  background: #828181;
+  position: absolute;
+  right: -11px;
+  top: 26px;
+  border: solid #ffffff 3px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #828181;
+  transition: all 0.3s ease;
+}
+
 .sketchy {
   padding: 1rem;
   display: inline-block;
@@ -154,10 +168,10 @@ export default {
 /* THEME COLORS */
 
 .theme-bg-color {
-  background: #a7c4b5;
+  background: #64868a;
 }
 .theme-color {
-  color: #508ab3;
+  color: #2f94a0;
   font-size: 18px;
 }
 .section-header {
@@ -181,8 +195,8 @@ export default {
 
 /* SIDEBAR COLORS */
 .sidebar-color {
-  background-image: url('assets/bg11.jpg');
-  -webkit-filter: grayscale(85%);
+  background-image: url('assets/bg13.jpg');
+  -webkit-filter: grayscale(35%);
 }
 
 .sidebar li {

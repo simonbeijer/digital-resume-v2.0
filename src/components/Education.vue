@@ -45,21 +45,18 @@ export default {
 </script>
 
 <style scoped>
-.circle {
-  height: 10px;
-  width: 10px;
-  background: #666464;
-  position: absolute;
-  right: -11px;
-  top: 26px;
-  border: solid #666464 4px;
-  border-radius: 9999px;
-}
-
 .education-timeline {
   width: 50%;
-  border-right: #666464 solid 4px;
+  border-right: solid 4px;
+  border-right: #828181 solid 3px;
   position: relative;
+  padding-right: 2rem;
+}
+
+.education-timeline h3 {
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 .education-item {

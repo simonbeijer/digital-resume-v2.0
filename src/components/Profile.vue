@@ -3,19 +3,17 @@
     <div class="col-1-div">
       <div class="about-div">
         <div class="sketchy">
-          <p>Hi! My name is Simon and I'm a Front-End Web Developer 👨🏼‍💻</p>
-          <p>Right now I'm looking for a new job in Front-End development.</p>
-          <p>I have 3 years of experience from my previous work at <a class="theme-color" href="https://www.keeros.se"
-              target="_blank">Keeeros AB</a>, and I'm now looking for a new opportunity.</p>
-          <p>In my spare time, I like to work out, create music, and work on my own web projects.</p>
-          <p>I enjoy creating alluring websites, and I'm always looking to improve.</p>
+          <p>Passionate web developer with expertise in modern front-end technologies and user experience design, seeking new challenges in Gothenburg. I thrive in creating intuitive, user-friendly interfaces and writing thoughtful code.</p>
+          <p>I have 3+ years of professional experience from <a class="theme-color" href="https://www.keeros.se"
+              target="_blank">Keeros AB</a>, where I developed cloud-based fintech platforms using Vue.js, PHP, and MySQL. I excel in both on-site and remote work environments with agile methodologies.</p>
+          <p>Currently exploring cutting-edge technologies including Next.js and AI integrations with LLM-based services through personal projects. I'm passionate about creating solutions that make a positive impact.</p>
+          <p>Outside of coding, I enjoy fitness, music production, and gaming.</p>
         </div>
       </div>
       <div class="details">
         <div class="detailsInfo sketchy">
           <h3>Details</h3>
           <p><span class="sketchy-label">Name:</span> <span class="underlined">Simon Beijer</span></p>
-          <p><span class="sketchy-label">Age:</span> <span class="underlined">34</span></p>
           <p><span class="sketchy-label">Location:</span> <span class="underlined">Gothenburg,<br>Sweden</span></p>
         </div>
         <div class="sketchy img-div">
@@ -46,7 +44,6 @@ export default {
     updateDimensions() {
       this.width = window.innerWidth;
       this.height = window.innerHeight;
-      console.log("update")
     }
   }
 };

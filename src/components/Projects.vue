@@ -6,10 +6,10 @@
           <a :href="project.link" target="_blank" class="project-image">
             <img :src="project.imgSrc" :alt="project.alt" class="main-img" />
             <div class="icon-div">
-              <img src="./../assets/tap.svg" alt="click" height="40px" width="40px" fill="red">
+              <img src="./../assets/tap2.svg" alt="click" height="40px" width="40px" fill="red">
             </div>
           </a>
-          <p>{{ project.description }}</p>
+          <p class="info-text">{{ project.description }}</p>
         </div>
       </div>
     </div>
@@ -28,10 +28,10 @@ export default {
     return {
       width: window.innerWidth,
       projects: [
-        { imgSrc: mli, alt: 'Mlilures', description: 'MLI lures project made for a friend.', link: 'https://simonbeijer.github.io/mli-build/', linkText: 'Live link' },
-        { imgSrc: harmoni, alt: 'Själsharmoni', description: 'Själsharmoni project for a healing business', link: 'https://simonbeijer.github.io/Healing', linkText: 'Live link' },
-        { imgSrc: app, alt: 'Scorify', description: 'Scorify is a final project with ReactNative', link: 'https://github.com/FThelin/mitt-lag---frontend', linkText: 'GitHub link' },
-        { imgSrc: work, alt: 'Fizzbuzz', description: 'Fizzbuzz work test made in about 5 hours', link: 'https://simonbeijer.github.io/fizzbuzz/', linkText: 'Live link' }
+        { imgSrc: mli, alt: 'MLI Lures', description: 'Responsive fishing lure e-commerce website built with modern web technologies. Features product showcase, responsive design, and optimized user experience.', link: 'https://simonbeijer.github.io/mli-build/', linkText: 'Live link' },
+        { imgSrc: harmoni, alt: 'Själsharmoni', description: 'Professional wellness business website with modern design, service booking functionality, and responsive layout for healing practice.', link: 'https://simonbeijer.github.io/Healing', linkText: 'Live link' },
+        { imgSrc: app, alt: 'Scorify', description: 'React Native mobile application for sports team management. Final project featuring real-time updates, user authentication, and team collaboration tools.', link: 'https://github.com/FThelin/mitt-lag---frontend', linkText: 'GitHub link' },
+        { imgSrc: work, alt: 'FizzBuzz Challenge', description: 'Interactive FizzBuzz implementation with modern UI/UX design. Technical challenge completed with clean code architecture and responsive design.', link: 'https://simonbeijer.github.io/fizzbuzz/', linkText: 'Live link' }
       ]
     };
   },
@@ -56,6 +56,11 @@ export default {
 </script>
 
 <style scoped>
+
+.info-text {
+  font-size: 13px;
+  text-align: center;
+}
 .projects-container {
   display: flex;
   flex-direction: column;
