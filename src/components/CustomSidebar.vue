@@ -125,7 +125,7 @@ a {
   /* color: rgb(212, 212, 212); */
 }
 
-a:hover {
+/* a:hover {
   color: #b7b7b7;
-}
+} */
 </style>
