@@ -102,7 +102,7 @@ export default {
 .line {
   background: rgb(234, 233, 233);
   height: 8px;
-  width: 580px;
+  width: 520px;
   left: 20%;
   margin-bottom: 26px;
   border-radius: 3px;
@@ -110,7 +110,7 @@ export default {
 
 h1 {
   font-size: 64px;
-  padding-left: 74px !important;
+  padding-left: 44px !important;
   letter-spacing: 4px;
   margin-bottom: 14px;
   /* font-weight: 400; */
