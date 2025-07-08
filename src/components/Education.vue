@@ -2,7 +2,7 @@
   <div id="education" class="education-container">
     <div class="education-wrapper">
       <div class="education-item">
-        <div class="education-timeline">
+        <div class="timeline">
           <div class="circle"></div>
           <h3>2019-2021 - Front-End</h3>
         </div>
@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="education-item">
-        <div class="education-timeline">
+        <div class="timeline">
           <div class="circle"></div>
           <h3>2018-2019 - Full-Stack</h3>
         </div>
@@ -45,19 +45,6 @@ export default {
 </script>
 
 <style scoped>
-.education-timeline {
-  width: 50%;
-  border-right: solid 4px;
-  border-right: #828181 solid 3px;
-  position: relative;
-  padding-right: 2rem;
-}
-
-.education-timeline h3 {
-  color: #000000;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
 
 .education-item {
   display: flex;

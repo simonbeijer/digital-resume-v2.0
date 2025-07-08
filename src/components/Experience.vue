@@ -2,7 +2,7 @@
   <div id="experience" class="experience-container">
     <div class="experience-wrapper">
       <div class="experience-item">
-        <div class="experience-timeline">
+        <div class="timeline">
           <div class="circle"></div>
           <h3>
             2021-2024 - Full-time employee
@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="experience-item">
-        <div class="experience-timeline">
+        <div class="timeline">
           <div class="circle"></div>
           <h3>
             2020-2021 - Internship
@@ -32,7 +32,7 @@
         </div>
       </div>
       <div class="experience-item">
-        <div class="experience-timeline">
+        <div class="timeline">
           <div class="circle"></div>
           <h3>2020 - Summer employee</h3>
         </div>
@@ -58,18 +58,6 @@ export default {
 
 <style scoped>
 
-.experience-timeline {
-  width: 50%;
-  border-right: #828181 solid 3px;
-  position: relative;
-  padding-right: 2rem;
-}
-
-.experience-timeline h3 {
-  color: #000000;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
 
 .experience-item {
   display: flex;

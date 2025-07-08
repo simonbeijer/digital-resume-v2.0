@@ -3,7 +3,8 @@
     <CustomSidebar v-if="displaySidebar" :sidebarSections="sidebarSections" :scrollTop="scrollTop"
       :firstSectionHeight="firstSectionHeight" @sectionMounted="scrollToSection" :getXPostion="sidebarXPosition" />
     <div class="main-content">
-      <HeroImage @displayProfile="scrollToSection" ref="heroImage" :buttonPostion="sidebarXPosition" :showButton="displaySidebar"/>
+      <HeroImage @displayProfile="scrollToSection" ref="heroImage" :buttonPostion="sidebarXPosition"
+        :showButton="displaySidebar" />
       <Section id="Profile">
         <Profile />
       </Section>
@@ -52,7 +53,7 @@ export default {
   },
   data() {
     return {
-      sidebarSections: ['Profile', 'Skills', 'Experience','Education', 'Projects', 'Contact'],
+      sidebarSections: ['Profile', 'Skills', 'Experience', 'Education', 'Projects', 'Contact'],
       scrollTop: 0,
       firstSectionHeight: 0,
       sidebarXPosition: "0px",
@@ -94,7 +95,7 @@ export default {
       const sidebarWidth = 156;
       let dynamicRatio;
 
-      if(screenWidth <= 1400) {
+      if (screenWidth <= 1400) {
         this.displaySidebar = false;
         return
       } else {
@@ -109,8 +110,8 @@ export default {
         dynamicRatio = 0.95;
       } else if (screenWidth >= 1400) {
         dynamicRatio = 0.97;
-      } 
-      
+      }
+
 
       let xPosition = (screenWidth - sidebarWidth) * dynamicRatio;
 
@@ -125,6 +126,21 @@ export default {
 
 
 <style>
+
+/* TIMELNE */
+
+.timeline {
+  width: 50%;
+  border-right: #828181 solid 3px;
+  position: relative;
+  padding-right: 2rem;
+}
+
+.timeline h3 {
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
 
 .circle {
   height: 12px;
@@ -170,10 +186,12 @@ export default {
 .theme-bg-color {
   background: #64868a;
 }
+
 .theme-color {
-  color: #2f94a0;
+  color:#72a0a6;
   font-size: 18px;
 }
+
 .section-header {
   font-size: 48px;
   text-align: center;
@@ -182,14 +200,13 @@ export default {
   transform: skewX(24deg);
 }
 
+
 .sketchy {
-  border: 3px solid #a5a5a5;
+  border: 3px solid #ececec;
 }
-
 .sketchy::before {
-  border: 2px solid #dfdede;
+  border: 2px solid rgb(239, 247, 244);
 }
-
 /* HERO IMAGE BUTTON */
 .button-div {
   /* background: rgb(0 0 0 / 20%); */
@@ -198,7 +215,9 @@ export default {
 /* SIDEBAR COLORS */
 .sidebar-color {
   background-image: url('assets/bg13.jpg');
-  -webkit-filter: grayscale(35%);
+  -webkit-filter: grayscale(50%);
+  background-size: cover;
+  background-position: center;
 }
 
 .sidebar li {

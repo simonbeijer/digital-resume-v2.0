@@ -7,7 +7,7 @@
           <p>I have 3+ years of professional experience from <a class="theme-color" href="https://www.keeros.se"
               target="_blank">Keeros AB</a>, where I developed cloud-based fintech platforms using Vue.js, PHP, and MySQL. I excel in both on-site and remote work environments with agile methodologies.</p>
           <p>Currently exploring cutting-edge technologies including Next.js and AI integrations with LLM-based services through personal projects. I'm passionate about creating solutions that make a positive impact.</p>
-          <p>Outside of coding, I enjoy fitness, music production, and gaming.</p>
+          <p>Outside of coding, I enjoy jiu jitsu, music production, and gaming.</p>
         </div>
       </div>
       <div class="details">
