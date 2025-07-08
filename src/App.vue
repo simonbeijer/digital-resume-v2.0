@@ -140,19 +140,19 @@ export default {
   color: #000000;
   font-weight: 600;
   margin-bottom: 0.5rem;
+  padding-top: 32px;
 }
 
 .circle {
-  height: 12px;
-  width: 12px;
-  background: #828181;
-  position: absolute;
-  right: -11px;
-  top: 26px;
-  border: solid #ffffff 3px;
+  width: 18px;
+  height: 18px;
+  background: linear-gradient(135deg, #72a0a6 60%, #64868a 100%);
+  border: 3px solid #fff;
   border-radius: 50%;
-  box-shadow: 0 0 0 3px #828181;
-  transition: all 0.3s ease;
+  position: absolute;
+  right: -14px;
+  top: 50px;
+  box-shadow: 0 0 0 2px #828181;
 }
 
 .sketchy {
@@ -165,6 +165,7 @@ export default {
   position: relative;
   margin-bottom: 2rem;
   box-shadow: 0 0 5px rgba(232, 231, 231, 0.651);
+  box-shadow: 0 5px 10px #e6e4e4;
 }
 
 
