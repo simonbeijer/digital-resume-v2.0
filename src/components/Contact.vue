@@ -82,19 +82,16 @@ h2 {
 .gmail {
   background-image: url("../assets/email2.png");
   background-size: 6rem; /* Reduced size */
-  opacity: 0.95;
 }
 
 .github {
   background-image: url("../assets/github-square2.png");
   background-size: 5rem; /* Reduced size */
-  opacity: 0.95;
 }
 
 .linkedin {
   background-image: url("../assets/linkedin2.png");
   background-size: 6rem; /* Reduced size */
-  opacity: 0.95;
 }
 
 .footer-div {
