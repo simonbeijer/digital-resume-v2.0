@@ -160,14 +160,14 @@ h2 {
 }
 
 .icon {
-  width: 16px;
-  height: 16px;
+  width: 48px;
+  height: 48px;
   display: block;
   margin: 0 auto 0.5rem auto;
   border-radius: 8px;
 }
 
 .custom-box-shadow {
-  box-shadow: 0 2px 12px 4px #64868a;
+  filter: drop-shadow(0 0 6px #64868a);
 }
 </style>
