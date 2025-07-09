@@ -168,6 +168,6 @@ h2 {
 }
 
 .custom-box-shadow {
-  filter: drop-shadow(0 0 12px #64868a) drop-shadow(0 0 8px #64868a);
+  filter: drop-shadow(0 0 8px #64868a) drop-shadow(0 0 8px #64868a);
 }
 </style>
