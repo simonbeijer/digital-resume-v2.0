@@ -160,14 +160,15 @@ h2 {
 }
 
 .icon {
-  width: 64px;
-  height: 64px;
+  width: 96px;
+  height: 96px;
   display: block;
   margin: 0 auto 0.5rem auto;
   border-radius: 8px;
 }
 
 .custom-box-shadow {
-  filter: drop-shadow(0 0 8px #64868a) drop-shadow(0 0 8px #64868a);
+  /* Clean, even blue glow */
+  filter: drop-shadow(0 0 18px #64868a) drop-shadow(0 0 8px #64868a);
 }
 </style>
