@@ -169,6 +169,6 @@ h2 {
 
 .custom-box-shadow {
   /* Clean, even blue glow */
-  filter: drop-shadow(0 0 18px #64868a) drop-shadow(0 0 8px #64868a);
+  filter: drop-shadow(0 0 8px #64868a) drop-shadow(0 0 8px #64868a);
 }
 </style>
