@@ -6,24 +6,39 @@
           href="https://www.linkedin.com/in/simon-beijer-a27b37181?trk=people-guest_profile-result-card_result-card_full-click&originalSubdomain=se"
           rel="noreferrer"
           target="_blank"
-          class="display-flex footer-divs linkedin"
+          class="display-flex footer-divs"
         >
+          <!-- LinkedIn -->
+          <svg class="icon custom-box-shadow" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="6" fill="#000"/>
+            <path d="M9.5 12.5h3v10h-3v-10zm1.5-1.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4 1.5h2.9v1.4h.04c.4-.8 1.4-1.6 2.9-1.6 3.1 0 3.7 2 3.7 4.6v5.6h-3v-5c0-1.2 0-2.7-1.7-2.7-1.7 0-2 1.3-2 2.6v5.1h-3v-10z" fill="#fff"/>
+          </svg>
           <p>Add me on LinkedIn</p>
         </a>
         <a
-          class="display-flex footer-divs gmail"
+          class="display-flex footer-divs"
           href="mailto:beijer.simon@gmail.com"
           rel="noreferrer"
           target="_blank"
         >
+          <!-- Gmail -->
+          <svg class="icon custom-box-shadow" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="6" fill="#000"/>
+            <path d="M6 10v12h20V10H6zm10 7.5L8 12.5V12h16v.5l-8 5z" fill="#fff"/>
+          </svg>
           <p>Send me an email</p>
         </a>
         <a
           href="https://github.com/simonbeijer"
           rel="noreferrer"
           target="_blank"
-          class="display-flex footer-divs github"
+          class="display-flex footer-divs"
         >
+          <!-- GitHub -->
+          <svg class="icon custom-box-shadow" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="6" fill="#000"/>
+            <path d="M16 7c-5 0-9 4-9 9 0 4 2.6 7.3 6.2 8.5.5.1.7-.2.7-.5v-1.7c-2.5.5-3-1.1-3-1.1-.4-1-1-1.3-1-1.3-.8-.6.1-.6.1-.6.9.1 1.4.9 1.4.9.8 1.4 2.1 1 2.6.8.1-.6.3-1 .5-1.2-2-.2-4-1-4-4.3 0-.9.3-1.6.8-2.2-.1-.2-.3-1 .1-2.1 0 0 .7-.2 2.2.8.7-.2 1.5-.3 2.3-.3s1.6.1 2.3.3c1.5-1 2.2-.8 2.2-.8.4 1.1.2 1.9.1 2.1.5.6.8 1.3.8 2.2 0 3.3-2 4.1-4 4.3.3.3.6.8.6 1.7v2.5c0 .3.2.6.7.5C22.4 23.3 25 20 25 16c0-5-4-9-9-9z" fill="#fff"/>
+          </svg>
           <p>Visit my Github</p>
         </a>
       </div>
@@ -142,5 +157,17 @@ h2 {
   display: flex;
   align-items: center;  
   padding-top: 36px;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  display: block;
+  margin: 0 auto 0.5rem auto;
+  border-radius: 8px;
+}
+
+.custom-box-shadow {
+  box-shadow: 0 2px 12px 4px #64868a;
 }
 </style>
