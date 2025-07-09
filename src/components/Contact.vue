@@ -6,30 +6,33 @@
           href="https://www.linkedin.com/in/simon-beijer-a27b37181?trk=people-guest_profile-result-card_result-card_full-click&originalSubdomain=se"
           rel="noreferrer"
           target="_blank"
-          class="display-flex footer-divs linkedin"
+          class="display-flex footer-divs"
         >
+          <img src="../assets/linkedin2.png" alt="LinkedIn" class="icon custom-box-shadow" />
           <p>Add me on LinkedIn</p>
         </a>
         <a
-          class="display-flex footer-divs gmail"
+          class="display-flex footer-divs"
           href="mailto:beijer.simon@gmail.com"
           rel="noreferrer"
           target="_blank"
         >
+          <img src="../assets/email2.png" alt="Gmail" class="icon custom-box-shadow" />
           <p>Send me an email</p>
         </a>
         <a
           href="https://github.com/simonbeijer"
           rel="noreferrer"
           target="_blank"
-          class="display-flex footer-divs github"
+          class="display-flex footer-divs"
         >
+          <img src="../assets/github-square2.png" alt="Github" class="icon custom-box-shadow" />
           <p>Visit my Github</p>
         </a>
       </div>
       <div class="display-flex center-text bottom-div">
         &copy; Simon Beijer 2025
-        <img alt="hooli" class="hooli" src="../assets/hooli.png" />
+        <img alt="hooli" class="icon custom-box-shadow" src="../assets/hooli.png" />
       </div>
     </div>
   </div>
@@ -71,27 +74,17 @@ h2 {
   text-align: center;
 }
 
-.gmail, .github, .linkedin {
+.icon {
+  height: 2.5rem;
+  margin-bottom: 0.5rem;
   display: block;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  border-radius: 6px;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.gmail {
-  background-image: url("../assets/email2.png");
-  background-size: 6rem; /* Reduced size */
-}
-
-.github {
-  background-image: url("../assets/github-square2.png");
-  background-size: 5rem; /* Reduced size */
-}
-
-.linkedin {
-  background-image: url("../assets/linkedin2.png");
-  background-size: 6rem; /* Reduced size */
+.custom-box-shadow {
+  box-shadow: 0 4px 16px #64868a;
+  border-radius: 8px;
 }
 
 .footer-div {
@@ -112,6 +105,9 @@ h2 {
   height: 8rem;
   max-width: 15rem;
   margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .col-5-div a {
@@ -142,5 +138,9 @@ h2 {
   display: flex;
   align-items: center;  
   padding-top: 36px;
+}
+
+.gmail, .github, .linkedin {
+  /* Remove background-image and background-size rules */
 }
 </style>
