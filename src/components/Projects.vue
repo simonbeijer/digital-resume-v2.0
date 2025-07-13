@@ -20,7 +20,7 @@
 import mli from '@/assets/mli.png';
 import harmoni from '@/assets/harmoni.png';
 import app from '@/assets/scorify.png';
-import letter from '@/assets/personal-letter-LLM.png.png';
+import letter from '@/assets/personal-letter-LLM.png';
 
 export default {
   name: 'Projects',
