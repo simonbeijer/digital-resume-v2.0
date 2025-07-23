@@ -19,7 +19,7 @@
 <script>
 import mli from '@/assets/mli.png';
 import harmoni from '@/assets/harmoni.png';
-import app from '@/assets/scorify.png';
+import matmind from '@/assets/matmind.png';
 import letter from '@/assets/personal-letter-LLM.png';
 
 export default {
@@ -28,10 +28,10 @@ export default {
     return {
       width: window.innerWidth,
       projects: [
-        { imgSrc: letter, alt: 'personal letter LLM', description: 'Use this Large Laguage Model (AI) to create the perfect personal letter, combine the jobb ad and CV to create your personal letter.', link: 'https://personal-letter.vercel.app/', linkText: 'GitHub link' },
-        { imgSrc: mli, alt: 'MLI Lures', description: 'Responsive fishing lure e-commerce website built with modern web technologies. Features product showcase, responsive design, and optimized user experience.', link: 'https://simonbeijer.github.io/mli-build/', linkText: 'Live link' },
-        { imgSrc: harmoni, alt: 'Själsharmoni', description: 'Professional wellness business website with modern design, service booking functionality, and responsive layout for healing practice.', link: 'https://simonbeijer.github.io/Healing', linkText: 'Live link' },
-        { imgSrc: app, alt: 'Scorify', description: 'React Native mobile application for sports team management. Final project featuring real-time updates, user authentication, and team collaboration tools.', link: 'https://github.com/FThelin/mitt-lag---frontend', linkText: 'GitHub link' }
+        { imgSrc: letter, alt: 'Personal Letter LLM', description: 'Use this Large Laguage Model (AI) to create the perfect personal letter, combine the jobb ad and CV to create your personal letter.', link: 'https://personal-letter.vercel.app/', linkText: 'Live link' },
+        { imgSrc: matmind, alt: 'Mat Mind', description: 'Online Jiu Jitsu coach. Mat Mind is a LLM (AI) driven expert that help you game on the mat i seconds.', link: 'https://mat-mind.vercel.app/', linkText: 'Live link' },
+        { imgSrc: mli, alt: 'MLI Lures', description: 'Responsive fishing lure e-commerce website built with modern web technologies. Features product showcase, responsive design, and optimized user experience.', link: 'https://simonbeijer.github.io/mli-build/', linkText: 'Github pages link' },
+        { imgSrc: harmoni, alt: 'Själsharmoni', description: 'Professional wellness business website with modern design, service booking functionality, and responsive layout for healing practice.', link: 'https://simonbeijer.github.io/Healing', linkText: 'GIthub pages link' },
       ]
     };
   },
