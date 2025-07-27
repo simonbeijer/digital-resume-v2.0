@@ -84,7 +84,6 @@ export default {
       this.setXPostionSidebar();
     },
     scrollToSection(sectionId) {
-
       const element = document.getElementById(sectionId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
@@ -112,9 +111,7 @@ export default {
         dynamicRatio = 0.97;
       }
 
-
       let xPosition = (screenWidth - sidebarWidth) * dynamicRatio;
-
 
       this.sidebarXPosition = `${Math.max(0, xPosition)}px`;
     }
@@ -209,9 +206,6 @@ export default {
   border: 2px solid rgb(239, 247, 244);
 }
 /* HERO IMAGE BUTTON */
-.button-div {
-  /* background: rgb(0 0 0 / 20%); */
-}
 
 /* SIDEBAR COLORS */
 .sidebar-color {

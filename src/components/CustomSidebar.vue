@@ -77,20 +77,6 @@ li a {
   text-decoration: none;
   display: block;
 }
-/* .sidebar::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 1px;
-  height: 15px; 
-  background-color: black; 
-  transform: skewY(-3deg); 
-  transform-origin: top left;
-  z-index: 0; 
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-} */
 
 
 ul {
@@ -122,10 +108,5 @@ ul li:last-child {
 
 a {
   text-decoration: none;
-  /* color: rgb(212, 212, 212); */
 }
-
-/* a:hover {
-  color: #b7b7b7;
-} */
 </style>

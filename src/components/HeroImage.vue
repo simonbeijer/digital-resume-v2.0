@@ -114,7 +114,6 @@ h1 {
   margin-bottom: 14px;
   font-family: "Condiment", handwriting;
   transform: skewX(22deg);
-  /* font-weight: 400; */
 }
 
 .label {
