@@ -7,7 +7,10 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "deploy": "npm run build && gh-pages -d dist",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "docker:build": "docker build -t digital-resume .",
+    "docker:run": "docker run -p 8080:8080 -v $(pwd)/src:/app/src -v $(pwd)/public:/app/public digital-resume",
+    "docker:dev": "npm run docker:build && npm run docker:run"
   },
   "dependencies": {
     "core-js": "^3.6.4",
