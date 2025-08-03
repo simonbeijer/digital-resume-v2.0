@@ -100,8 +100,8 @@ h2 {
 
 .footer-divs {
   flex-grow: 1;
-  height: 8rem;
-  max-width: 14rem;
+  height: 6rem;
+  max-width: 12rem;
   margin: 1rem;
   background-color: #2b2b2b;
   border-radius: 8px;
