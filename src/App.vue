@@ -65,10 +65,13 @@ export default {
     this.setXPostionSidebar();
     this.$refs.appContainer.addEventListener('scroll', this.handleScroll);
     window.addEventListener('resize', this.handleResize);
+    window.addEventListener('popstate', this.handleInitialURL);
+    this.handleInitialURL();
   },
   beforeDestroy() {
     this.$refs.appContainer.removeEventListener('scroll', this.handleScroll);
     window.removeEventListener('resize', this.handleResize);
+    window.removeEventListener('popstate', this.handleInitialURL);
   },
   methods: {
     handleScroll() {
@@ -114,6 +117,16 @@ export default {
       let xPosition = (screenWidth - sidebarWidth) * dynamicRatio;
 
       this.sidebarXPosition = `${Math.max(0, xPosition)}px`;
+    },
+    handleInitialURL() {
+      const path = window.location.pathname;
+      const section = path.split('/').pop();
+      const validSections = this.sidebarSections.map(s => s.toLowerCase());
+      
+      if (validSections.includes(section)) {
+        const properCase = this.sidebarSections.find(s => s.toLowerCase() === section);
+        setTimeout(() => this.scrollToSection(properCase), 100);
+      }
     }
   },
 

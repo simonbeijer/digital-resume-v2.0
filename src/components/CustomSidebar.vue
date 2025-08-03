@@ -2,7 +2,7 @@
   <div class="sidebar sidebar-color" :style="{ marginTop: setYPostion, marginLeft: getXPostion }" ref="sidebar">
     <ul>
       <li v-for="section in sidebarSections" :key="section" @click="selectSection(section)" class="hover">
-        <a href="#">{{ section }}</a>
+        <a href="#" @click.prevent>{{ section }}</a>
       </li>
     </ul>
   </div>
@@ -46,6 +46,9 @@ export default {
   methods: {
     selectSection(section) {
       this.$emit('sectionMounted', section);
+      
+      const sectionPath = section.toLowerCase();
+      window.history.pushState(null, '', `/digital-resume-v2.0/${sectionPath}`);
     }
   }
 };
