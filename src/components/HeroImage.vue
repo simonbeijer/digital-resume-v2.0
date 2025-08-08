@@ -8,7 +8,7 @@
     <div class="hero-text">
       <h1>SIMON BEIJER</h1>
       <div class="line"></div>
-      <div class="label">
+      <div class="label typewriter">
         <p>Web Developer</p>
       </div>
     </div>
@@ -121,14 +121,41 @@ h1 {
   color: white;
   font-family: courier;
   padding: 0px 24px !important;
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.3);
-  border-top-right-radius: 2px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 3px;
   letter-spacing: 0.6ch;
-  width: auto;
+  width: 200px;
   margin-left: 20px !important;
   margin-top: 1rem !important;
+}
+
+.typewriter p {
+  margin-inline: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 1px solid white;
+  animation: typing 5s steps(13) forwards, 
+  blink 1s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  } 
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .arrow {
