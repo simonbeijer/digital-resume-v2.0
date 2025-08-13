@@ -28,7 +28,7 @@ export default {
     return {
       width: window.innerWidth,
       projects: [
-        { imgSrc: skooli, alt: 'Skooli', description: 'Tool for teachers to generate "Thematic learning" plans with the help of this AI/LLM RAG tool.', link: 'soon....', linkText: 'Live link' },
+        { imgSrc: skooli, alt: 'Skooli', description: 'Tool for teachers to generate "Thematic learning" plans with the help of this AI/LLM RAG tool.', link: 'https://skooli-lilac.vercel.app/', linkText: 'Live link' },
         { imgSrc: letter, alt: 'Personal Letter LLM', description: 'Use this Large Laguage Model (AI) to create the perfect personal letter, combine the jobb ad and CV to create your personal letter.', link: 'https://personal-letter.vercel.app/', linkText: 'Live link' },
         { imgSrc: matmind, alt: 'Mat Mind', description: 'Online Jiu Jitsu coach. Mat Mind is a LLM (AI) driven expert that help you game on the mat i seconds.', link: 'https://mat-mind.vercel.app/', linkText: 'Live link' },
         { imgSrc: mli, alt: 'MLI Lures', description: 'Responsive fishing lure e-commerce website built with modern web technologies. Features product showcase, responsive design, and optimized user experience.', link: 'https://simonbeijer.github.io/mli-build/', linkText: 'Github pages link' },
