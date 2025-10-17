@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: 'Skills',
+  name: "SkillsComponent",
   data() {
     return {
       skillArr: [
@@ -35,6 +35,7 @@ export default {
         // Small skills
         { name: "HTML5", level: "small", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" },
         { name: "CSS3", level: "small", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" },
+        { name: "Python", level: "small", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" },
         { name: "VS Code", level: "small", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" },
         { name: "jQuery", level: "small", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/jquery/jquery-original.svg" },
         { name: "Figma", level: "small", icon: "https://www.vectorlogo.zone/logos/figma/figma-icon.svg" },
@@ -54,19 +55,37 @@ export default {
 <style scoped>
 .skills-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 1rem 0;
   margin-left: 20px;
 }
 
 .tag-cloud-wrapper {
   width: 100%;
-  max-width: 850px;
-  background-color: white;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px #e6e4e4;
+  max-width: 900px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.tag-cloud-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #42b883, #35495e, #42b883);
+  background-size: 200% 100%;
+  animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
 }
 
 .tag-cloud {
@@ -83,23 +102,35 @@ export default {
   align-items: center;
   gap: 0.5rem;
   padding: 0.8rem;
-  color: #495057;
+  color: #2c3e50;
   font-weight: 500;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   text-align: center;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(66, 184, 131, 0.1);
 }
 
 .skill-tag:hover {
-  transform: translateY(-2px);
+  transform: translateY(-4px) scale(1.05);
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(66, 184, 131, 0.3);
+  box-shadow: 0 8px 16px rgba(66, 184, 131, 0.15);
 }
 
 .skill-icon {
   width: 22px;
   height: 22px;
   flex-shrink: 0;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
+.skill-tag:hover .skill-icon {
+  transform: rotate(5deg) scale(1.1);
+}
 
 .skill-name {
   font-size: 0.85rem;
@@ -119,7 +150,7 @@ export default {
 
 .skill-large .skill-name {
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* Medium skills */
