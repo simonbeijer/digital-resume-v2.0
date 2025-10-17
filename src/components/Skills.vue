@@ -62,30 +62,10 @@ export default {
 
 .tag-cloud-wrapper {
   width: 100%;
-  max-width: 900px;
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-  padding: 2.5rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  position: relative;
-  overflow: hidden;
-}
-
-.tag-cloud-wrapper::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #42b883, #35495e, #42b883);
-  background-size: 200% 100%;
-  animation: gradient 3s ease infinite;
-}
-
-@keyframes gradient {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+  max-width: 850px;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
 }
 
 .tag-cloud {
@@ -102,22 +82,18 @@ export default {
   align-items: center;
   gap: 0.5rem;
   padding: 0.8rem;
-  color: #2c3e50;
+  color: #495057;
   font-weight: 500;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   text-align: center;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(66, 184, 131, 0.1);
+  border-radius: 8px;
 }
 
 .skill-tag:hover {
-  transform: translateY(-4px) scale(1.05);
-  background: rgba(255, 255, 255, 0.9);
-  border-color: rgba(66, 184, 131, 0.3);
-  box-shadow: 0 8px 16px rgba(66, 184, 131, 0.15);
+  transform: translateY(-3px);
+  background: rgba(140, 200, 237, 0.15);
+  box-shadow: 0 4px 12px rgba(140, 200, 237, 0.3);
 }
 
 .skill-icon {
