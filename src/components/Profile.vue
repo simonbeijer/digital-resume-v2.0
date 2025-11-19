@@ -3,10 +3,19 @@
     <div class="col-1-div">
       <div class="about-div">
         <div class="sketchy">
-          <p>Passionate web developer with expertise in modern front-end technologies and user experience design, seeking new challenges in Gothenburg. I thrive in creating intuitive, user-friendly interfaces and writing thoughtful code.</p>
-          <p>I have 3+ years of professional experience from <a class="theme-color" href="https://www.keeros.se"
-              target="_blank">Keeros AB</a>, where I developed cloud-based fintech platforms using Vue.js, PHP, and MySQL. I excel in both on-site and remote work environments with agile methodologies.</p>
-          <p>Currently exploring cutting-edge technologies including Next.js and AI integrations with LLM-based services through personal projects. I'm passionate about creating solutions that make a positive impact.</p>
+          <p>Full-stack web developer with 4 years of experience and a strong focus on front-end development and user
+            experience. I specialize in building modern, intuitive interfaces while being comfortable working across the
+            entire stack.</p>
+
+          <p>I spent 3+ years at <a class="theme-color" href="https://www.keeros.se" target="_blank">Keeros AB</a>,
+            developing cloud-based fintech platforms with Vue.js, PHP, and MySQL. My work included everything from UI
+            components and REST API integration to security implementations and database design. I thrive in agile
+            teams, both on-site and remote.</p>
+
+          <p>I stay current through personal projects, recently building Next.js applications with AI integration using
+            LLM APIs. Currently expanding my skills with Python and machine learning to broaden my technical toolkit.
+          </p>
+
           <p>Outside of coding, I enjoy jiu jitsu, music production, and gaming.</p>
         </div>
       </div>
@@ -81,10 +90,12 @@ export default {
   padding: 3rem 0rem;
   flex-direction: row;
 }
+
 @media (max-width: 920px) {
   .details {
     flex-direction: column;
   }
+
   .detailsInfo {
     margin-bottom: 2rem;
   }

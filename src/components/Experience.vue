@@ -9,11 +9,17 @@
           </h3>
         </div>
         <div class="experience-text sketchy" style="padding: 1rem 2rem !important;">
-          <h3>Front-End Developer, Keeros AB, Gothenburg</h3>
-          <p>Full-time position as Front-End Developer within fintech, with elements of full-stack development and support responsibilities.</p>
-          <p>Developed and maintained headless cloud platforms for invoice management using Vue.js, jQuery, PHP, and MySQL. Experience in both new development and maintenance of legacy codebases.</p>
-          <p>Worked both on-site and remotely using agile methodologies. Technologies used: Vue.js, jQuery, PHP, MySQL, Docker, Jest, Cypress, Figma.</p>
-          <p>Responsible for creating user-friendly interfaces and ensuring seamless integration between front-end and back-end systems.</p>
+          <h3>Developer, Keeros AB, Gothenburg</h3>
+          <p>Full-time developer role at a fintech company building cloud-based platforms for factoring, business loans,
+            and leasing. Worked across the full stack with primary focus on front-end development.</p>
+          <p>Developed and maintained headless cloud platforms using Vue.js, PHP, and MySQL. Built UI components,
+            integrated REST APIs (CRUD operations), and worked on security implementations including SQL injection
+            prevention and improved password handling.</p>
+          <p>Key projects included building a chat solution for bank-customer communication and continuously refactoring
+            legacy jQuery/PHP code into reusable Vue components. Collaborated closely with external security consultants
+            and internal teams.</p>
+          <p>Worked both on-site and remotely using agile methodologies. Technologies: Vue.js, jQuery, PHP, MySQL,
+            Docker, Jest, Cypress, Figma, Git, i18n.</p>
         </div>
       </div>
       <div class="experience-item">
@@ -24,11 +30,14 @@
           </h3>
         </div>
         <div class="experience-text sketchy" style="padding: 1rem 2rem !important;">
-          <h3>Front-End Developer Intern, Hive and Five, Borås</h3>
-          <p>Internship in front-end development, primarily remote work through Media Institute partnership.</p>
-          <p>Developed mobile application features using React Native with Redux for state management.</p>
-          <p>Created new functionality for <a class="theme-color"
-              href="https://adventurehero.se" target="_blank">adventurehero.se</a> using React and TypeScript, focusing on user experience and responsive design.</p>
+          <h3>Developer Intern, Hive and Five, Borås</h3>
+          <p>Internship in web and mobile development, primarily remote work through Media Institute
+            partnership.</p>
+          <p>Developed mobile application features using React Native with Redux for state management. Built new
+            functionality for <a class="theme-color" href="https://adventurehero.se"
+              target="_blank">adventurehero.se</a> using React, TypeScript, and Redux.</p>
+          <p>Worked with MongoDB and Docker. Focused on creating responsive, user-friendly interfaces and implementing
+            modern front-end practices.</p>
         </div>
       </div>
       <div class="experience-item">
@@ -39,7 +48,8 @@
         <div class="experience-text sketchy" style="padding: 1rem 2rem !important;">
           <h3>Web Developer, Imseb, Gothenburg</h3>
           <p>Summer position in web development, working remotely to deliver client solutions.</p>
-          <p>Developed responsive website using Vue.js based on provided designs for American client, ensuring pixel-perfect implementation and cross-browser compatibility.</p>
+          <p>Developed responsive website using Vue.js based on provided designs for American client, ensuring
+            pixel-perfect implementation and cross-browser compatibility.</p>
         </div>
       </div>
     </div>
@@ -57,8 +67,6 @@ export default {
 </script>
 
 <style scoped>
-
-
 .experience-item {
   display: flex;
 }
@@ -102,6 +110,4 @@ export default {
   position: relative;
   z-index: 10;
 }
-
-
 </style>
