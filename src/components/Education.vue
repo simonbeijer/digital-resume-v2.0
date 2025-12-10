@@ -4,6 +4,19 @@
       <div class="education-item">
         <div class="timeline">
           <div class="circle"></div>
+          <h3>2025- AI / Machine learning</h3>
+        </div>
+        <div class="education-text sketchy" style="padding: 1rem 2rem !important;">
+          <h3>Medieinstitutet Gothenburg</h3>
+          <p>Education in Python, machine learning, and AI with a focus on practical application.</p>
+          <p>The course covers supervised and unsupervised learning, deep learning, database technology, and advanced Python programming.</p>
+          <p><a class="theme-color" href="https://medieinstitutet.se/utbildningar/artificiell-intelligens-maskininlarning" target="_blank"
+              rel="noreferrer">Medieinstitutet.se</a></p>
+        </div>
+      </div>
+      <div class="education-item">
+        <div class="timeline">
+          <div class="circle"></div>
           <h3>2019-2021 - Front-End</h3>
         </div>
         <div class="education-text sketchy" style="padding: 1rem 2rem !important;">
